@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>影片信息</title>
+		<link rel="stylesheet" type="text/css" href="css/MovieInfo.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function()
+			{
+				$(".op1").parent("li").css("border-bottom","2px solid red");
+				$(".op1").css("color","red");
+				$(".left-contain2").hide();
+				$(".op2").click(function()
+				{
+					if ($(".left-contain2").is(":hidden"))
+					{	$(".op2").parent("li").css("border-bottom","2px solid red");
+						$(".op2").css("color","red");
+						$(".op1").parent("li").css("border-bottom","none");
+						$(".op1").css("color","black");
+						$(".left-contain1").hide();
+						$(".left-contain2").show();
+					}
+				});
+				$(".op1").click(function()
+				{
+					if ($(".left-contain1").is(":hidden"))
+					{
+						$(".op1").parent("li").css("border-bottom","2px solid red");
+						$(".op1").css("color","red");
+						$(".op2").parent("li").css("border-bottom","none");
+						$(".op2").css("color","black");
+						$(".left-contain2").hide();
+						$(".left-contain1").show();
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li>
+						<a href="Page.html">首页</a>
+					</li>
+					<li>
+						<a href="MovieInfoList.html">电影</a>
+					</li>
+					<li>
+						<a href="CinemaList.html">影院</a>
+					</li>
+					<li>
+						<a href="News.html">热点</a>
+					</li>
+					<li>
+						<a href="change.html">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="img/默认用户头像.png" style="width: 85%; margin-top: 25px;"/></div>
+						<div class="userimge_list"><img src="img/down.png"/></div>
+						<div class="userlist">
+							<a href="登录界面/login.html">登录</a>
+							<script type="text/javascript">
+		$(function()
+		{
+			//评论部分
+			$(".wirteTxt").hide();
+			$(".btnwrite").click(function()
+			{
+				if ($(".wirteTxt").is(":hidden")) {
+					$(".wirteTxt").show();
+					$(".btnwrite").val("取消");
+				}
+				else
+				{
+					$(".wirteTxt").hide();
+					$(".btnwrite").val("写短评");
+				}
+			});
+			
+			$(".userlist").hide();
+			$(".top_list1").parent("li").css("background-color","red");
+			$(".top_list1").css("color","white");
+			$(".page-top_user").click(function()
+			{
+				if($(".userlist").is(":hidden"))
+				{
+					$(".userlist").show();
+					$(".userimge_list>img").attr("src","img/up.png");
+				}
+				else
+				{
+					$(".userlist").hide();
+					$(".userimge_list>img").attr("src","img/down.png");
+				}
+			});
+		});
+	</script>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+<div id="color-box"></div>
+		<div id="all">
+			<div class="top">
+				<img src="img/若能与你共乘海浪之上（info）.png" class="top-img"/>
+				<div class="top-contain">
+					<p class="top-contain_title">
+						若能与你共乘海浪之上
+						<p>きみと、波にのれたら</p>
+					</p>
+					<div class="top-contain_con">
+						<p>奇幻,爱情,动画</p>
+						<p>日本 / 96分钟</p>
+						<p>2019-12-07 08:00大陆上映</p>
+					</div>
+					<div class="btnbox">
+						<p><a href="#" class="link_comment"><input type="button" name="btnComment" id="btnComment" value="评    论" /></a></p>
+						<p><a href="BuyMovieTicket.html" class="link_buy"><input type="button" name="btnbuy" id="btnbuy" value="购    票" /></a></p>
+					</div>
+				</div>
+				<div class="top-data">
+					<p>用户评分：<span>8.6</span></p>
+					<p>累计票房：<span>1280</span>万</p>
+				</div>
+			</div>
+			
+			<div class="center">
+				<div class="center-left">
+					<ul class="center-left_list">
+						<li><a href="#" class="left-list op1">介绍</a></li>
+						<li><a href="#" class="left-list op2">演职人员</a></li>
+					</ul>
+					<div class="left-contain left-contain1">
+						<p class="text-title">| 剧情介绍</p>
+						<p class="text">夏天、阳光，沙滩、海浪，青年消防员雏罂粟港和爱好冲浪的向水日菜子相遇并迅速展开热恋。看似命中注定的这对恋人，却不幸遭遇生死别离。
+							无法接受港已经离世的日菜子，某天突然发现，只要唱起属于两个人的那首歌，港就会从水中出现……
+							由于大学入学而搬家到海边城市的冲浪爱好者向水日菜子，尽管在海浪之上无所畏惧，但对自己的未来没有自信。在一次的火灾中，日菜子邂逅了消防员雏罂粟港，很快两人坠入爱河。
+							就在两人发展成彼此离不开对方的时候，港却因海难殒命。
+							无法再去直视自己最喜欢的大海、日渐憔悴的日菜子，某天无意中哼起了两人回忆的歌曲之时，港竟然从水中出现了。
+							“我们不是已经约好的吗。我会一直帮助日菜子。”日菜子为再次见到港感到高兴，但是……
+							两人能否永远在一起？港再次现身的真正目的又是什么。
+						</p>
+					</div>
+					<div class="left-contain left-contain2">
+						<p class="text-title">| 导演</p>
+						<p class="text">汤浅政明</p>
+						<p class="text-title">| 演员</p>
+						<p class="text">片寄凉太&nbsp;&nbsp;&nbsp;饰：雏罂粟港</p>
+						<p class="text">川荣李奈&nbsp;&nbsp;&nbsp;饰：向水日菜子</p>
+						<p class="text">松本穗香&nbsp;&nbsp;&nbsp;饰：雏罂粟洋子</p>
+						<p class="text">伊藤健太郎&nbsp;&nbsp;&nbsp;饰：川村山葵</p>
+						<p class="text-title">| 编剧</p>
+						<p class="left-contain2">吉田玲子</p>
+						<p class="text-title">| 制片人</p>
+						<p class="text">Eun Young Choi</p>
+						<p class="text-title">| 影视音乐制作</p>
+						<p class="text">大满岛</p>
+					</div>
+				</div>
+				<div class="center-right">
+					<p class="text-title">| 其它电影</p>
+					<div class="movie-list">
+						<dl>
+							<dt><a href=""><img src="img/冰雪奇缘2.png"/></a></dt>
+							<dd>冰雪奇缘2</dd>
+							<dd><span class="movie_score">8.9</span></dd>
+						</dl>
+						<dl>
+							<dt><a href=""><img src="img/姜子牙.png"/></a></dt>
+							<dd>姜子牙</dd>
+							<dd><span class="movie_score">9.5</span></dd>
+						</dl>
+						<dl>
+							<dt><a href=""><img src="img/叶问4.png"/></a></dt>
+							<dd>叶问4</dd>
+							<dd><span class="movie_score">8.5</span></dd>
+						</dl>
+					</div>
+					<div class="movie-list">
+						<dl>
+							<dt><a href=""><img src="img/两只老虎.png"/></a></dt>
+							<dd>两只老虎</dd>
+							<dd><span class="movie_score">8.9</span></dd>
+						</dl>
+						<dl>
+							<dt><a href=""><img src="img/利刃出鞘.png"/></a></dt>
+							<dd>利刃出鞘</dd>
+							<dd><span class="movie_score">9.5</span></dd>
+						</dl>
+						<dl>
+							<dt><a href=""><img src="img/星际探险.png"/></a></dt>
+							<dd>星际探险</dd>
+							<dd><span class="movie_score">8.5</span></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="center-bottom">
+					<p class="text-title">| 热门短评<input type="button" value="写短评" class="btnwrite"/></p>
+					<div class="center-bottom_con">
+						<div class="wirteTxt">
+							<textarea name="wirteTxt" rows="5" cols="95" placeholder="输入想说的话……"></textarea>
+							<p><input type="button" value="发布" /></p>
+						</div>
+						<div class="wirtelist">
+							<div class="wirtelist_con">
+								<img src="img/a_movieinfo_user/timg (1).jpg"/>
+								<div class="userinfo">
+									<p>刘默默12138</p>
+									<p class="wirte_date">12-10</p>
+								</div>
+								<p class="wirte_text">
+									反正是比昨天看勇敢者游戏强太多。上一部日本恋爱题材的电影，我看得满意的还是年前的，我想吃掉你的胰脏。现在这部恋人之间的感情更加令人感动。前面狗粮吃到饱，后面泪目不想断狗粮。可惜好电影，场次少，知道的人也少，宣传力度不够呢。今天刚上映，眼看这个星期不去看，可能下周就没得看了，咬咬牙还是用我微薄的微信零钱买了张票。恋爱题材的话，我不建议带小孩子去看，因为还不太适合呢，别看是动画片就带着去看。另外可能有人吐槽男主死后活在了水中怎么可能什么的，我觉得日本本土文化是相信一切东西皆可成灵的，所以他们信鬼神。所以就这点，可以大胆的想象这样的恋爱情节，如果是国内拍的，后面就拍成女主神经病了吧
+								</p>
+							</div>
+							<div class="wirtelist_con">
+								<img src="img/a_movieinfo_user/timg (2).jpg"/>
+								<div class="userinfo">
+									<p>团团子</p>
+									<p class="wirte_date">12-10</p>
+								</div>
+								<p class="wirte_text">
+									『接下来这封信是来自一年前是由【雏罂粟港】送给【向水日菜子】小姐的』 我哭爆，虽然刚开始有点太爱情偶像剧(尤其是主题曲响的时候好的我已经单曲循环了)虽然中间感觉有点鬼畜(?)虽然洋子后来说“只有傻瓜不谈恋爱”，但是我也要吹爆它，www我也想喝草莓苏打(bushi)，片片的声音我太可了
+								</p>
+							</div>
+							<div class="wirtelist_con">
+								<img src="img/a_movieinfo_user/timg.jpg"/>
+								<div class="userinfo">
+									<p>王的男人|</p>
+									<p class="wirte_date">12-10</p>
+								</div>
+								<p class="wirte_text">
+									感觉，没有四叠半和春宵好看
+								</p>
+							</div>
+							<div class="wirtelist_con">
+								<img src="img/a_movieinfo_user/20170708003410_2ksPH.jpeg"/>
+								<div class="userinfo">
+									<p>一条苏苏酱</p>
+									<p class="wirte_date">12-10</p>
+								</div>
+								<p class="wirte_text">
+									看的很舒服，汤浅画面把控依旧很好，剧情也许弱一点，但感情渲染还较到位，总体来说也是很棒，虽然还是没春宵棒（笑）
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</body>
+</html>

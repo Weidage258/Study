@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="movie.master.cs" Inherits="Movie_ticketing.movie" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Content/foot.css" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <%-- 导航总容器 --%>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="box">
+            <a class="navbar-brand" href="index.aspx" style="margin-left: 150px;">
+                <img src="images/login/one2.jpg" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" id="menu">
+                    <li class="nav-item dropdown address">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">长沙县
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" href="#" style="height: 40px; line-height: 40px; margin: 0px auto;">芙蓉区</a>
+                            <a class="nav-link" href="#" style="height: 40px; line-height: 40px; margin: 0px auto;">雨花区</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="active" onclick="active(this)">
+                        <a class="nav-link" href="index.aspx">首页 </a>
+                    </li>
+                    <li class="nav-item" onclick="active(this)">
+                        <a class="nav-link" href="#">电影</a>
+                    </li>
+                    <li class="nav-item" onclick="active(this)">
+                        <a class="nav-link " href="#">影院</a>
+                    </li>
+                    <li class="nav-item" onclick="active(this)">
+                        <a class="nav-link " href="#">热点</a>
+                    </li>
+                    <li class="nav-item" onclick="active(this)">
+                        <a class="nav-link " href="#">榜单</a>
+                    </li>
+                </ul>
+                <div id="search">
+                    <asp:TextBox ID="tb_search" class="form-control" runat="server" placeholder="电影名称" />
+                    <asp:Button ID="bt_search" runat="server" class="btn btn-primary" />
+                    <asp:ImageButton ID="bt_login" class="btn" runat="server" ImageUrl="~/images/Master/person.svg" OnClick="bt_login_Click" />
+                </div>
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="jiobu">
+            <p class="friendly-links">
+                关于第一电影 :
+				<a href="#" target="_blank " class="okok">关于我们</a>
+                <span></span>
+                <a href="#" target="_blank" class="okok">管理团队</a>
+                <span></span>
+                <a href="#" target="_blank" class="okok">投资者关系</a>
+                &nbsp;&nbsp;&nbsp;&nbsp; 友情链接 :
+				<a href="#" target="_blank" class="okok">美团网</a>
+                <span></span>
+                <a href="#">格瓦拉</a>
+                <span></span>
+                <a href="#" target="_blank" class="okok">美团下载</a>
+                <span></span>
+                <a href="#" target="_blank" class="okok">欢喜首映</a>
+            </p>
+            <p class="friendly-links">
+                商务合作邮箱：v@diyi.com 客服电话：10105335 违法和不良信息举报电话：4006018900
+            </p>
+            <p class="friendly-links">
+                用户投诉邮箱：tousujubao@meituan.com 舞弊线索举报邮箱：wubijubao@maoyan.com
+            </p>
+            <p class="friendly-links  credentials">
+                <a href="/aboutcence/1" target="_blank">中华人民共和国增值电信业务经营许可证 京B2-20190350</a>
+                <span></span>
+                <a href="/aboutcence/4" target="_blank">营业性演出许可证 京演（机构）（2019）4094号</a>
+            </p>
+            <p class="friendly-links  credentials">
+                <a href="/aboutcence/1" target="_blank">中华人民共和国增值电信业务经营许可证 京B2-20190350</a>
+                <span></span>
+                <a href="/aboutcence/4" target="_blank">营业性演出许可证 京演（机构）（2019）4094号</a>
+            </p>
+            <p class="friendly-links  credentials">
+                <a href="/aboutcence/3" target="_blank">广播电视节目制作经营许可证 （京）字第08478号</a>
+                <span></span>
+                <a href="/aboutcence/2" target="_blank">网络文化经营许可证 京网文（2019）3837-369号 </a>
+            </p>
+            <p class="friendly-links  credentials">
+                <a href="/rules/agreement" target="_blank">猫眼用户服务协议 </a>
+                <span></span>
+                <a href="/rules/rule" target="_blank">猫眼平台交易规则总则 </a>
+                <span></span>
+                <a href="/rules/privacy" target="_blank">隐私政策 </a>
+            </p>
+            <p class="friendly-links  credentials">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003232" target="_blank">京公网安备 11010102003232号
+                </a>
+                <span></span>
+                <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备16022489号-1</a>
+            </p>
+            <p class="friendly-links  credentials">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003232" target="_blank">京公网安备 11010102003232号
+                </a>
+                <span></span>
+                <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP备16022489号-1</a>
+            </p>
+            <p class="friendly-links  credentials">
+                <span class="my-footer-year">2021</span> 第一电影 maoyan.com
+            </p>
+            <div class="certificate">
+                <a href="#">
+                    <img src="images/Master/1.jpg" />
+                </a>
+                <a href="#">
+                    <img src="images/Master/2.jpg" >
+                </a>
+                <a href="#">
+                    <img src="images/Master/3.jpg" >
+                </a>
+            </div>
+
+        </div>
+
+    </form>
+    <script>
+        //清楚ul中所有li的id
+        function clearID() {
+            $("#menu").find("li").attr("id", null);
+        }
+        //点击改变标题样式active
+        function active(e) {
+            clearID();
+            e.id = "active";
+        }
+
+    </script>
+</body>
+</html>

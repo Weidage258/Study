@@ -1,0 +1,13 @@
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\Model.dll.config
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\Model.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\Model.pdb
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\EntityFramework.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\EntityFramework.xml
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\obj\Debug\Model.csproj.CopyComplete
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\obj\Debug\Model.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Model\obj\Debug\Model.pdb

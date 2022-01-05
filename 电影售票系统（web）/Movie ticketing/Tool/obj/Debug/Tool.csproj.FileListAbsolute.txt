@@ -1,0 +1,6 @@
+E:\学习文件\电影售票系统（web）\Movie ticketing\Tool\bin\Debug\Tool.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Tool\bin\Debug\Tool.pdb
+E:\学习文件\电影售票系统（web）\Movie ticketing\Tool\obj\Debug\Tool.csprojAssemblyReference.cache
+E:\学习文件\电影售票系统（web）\Movie ticketing\Tool\obj\Debug\Tool.csproj.CoreCompileInputs.cache
+E:\学习文件\电影售票系统（web）\Movie ticketing\Tool\obj\Debug\Tool.dll
+E:\学习文件\电影售票系统（web）\Movie ticketing\Tool\obj\Debug\Tool.pdb

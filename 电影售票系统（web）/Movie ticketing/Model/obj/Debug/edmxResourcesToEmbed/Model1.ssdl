@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminName" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="AdminPwd" Type="nvarchar" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="AreaID" />
+    </Key>
+    <Property Name="AreaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AreaName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Contents" Type="nvarchar" MaxLength="200" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="CommentDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="LanguageID" />
+    </Key>
+    <Property Name="LanguageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LanguageName" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Movies">
+    <Key>
+      <PropertyRef Name="MovieID" />
+    </Key>
+    <Property Name="MovieID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MoviePrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="MovieShowDate" Type="date" Nullable="false" />
+    <Property Name="MovieDuration" Type="int" Nullable="false" />
+    <Property Name="MovieImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AreaID" Type="int" Nullable="false" />
+    <Property Name="CommentID" Type="int" />
+    <Property Name="Score" Type="nvarchar" MaxLength="10" />
+    <Property Name="BoxOffice" Type="nvarchar" MaxLength="10" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MovieTheater">
+    <Key>
+      <PropertyRef Name="TheaterID" />
+    </Key>
+    <Property Name="TheaterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TheaterName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MovieID" Type="int" />
+  </EntityType>
+  <EntityType Name="MovieTypes">
+    <Key>
+      <PropertyRef Name="MovieTypeID" />
+    </Key>
+    <Property Name="MovieTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieTypeName" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieID" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OrderDetailed" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Relation">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieTypeID" Type="int" Nullable="false" />
+    <Property Name="MovieID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeaterRelation">
+    <Key>
+      <PropertyRef Name="TheaterRelationID" />
+    </Key>
+    <Property Name="TheaterRelationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MovieID" Type="int" Nullable="false" />
+    <Property Name="TheaterID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="UserNickname" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="UserPwd" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="Birthday" Type="date" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="PersonalityStatement" Type="nvarchar" MaxLength="200" />
+    <Property Name="UserAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="UserImage" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <Association Name="FK_Comment_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movies_Area">
+    <End Role="Area" Type="Self.Area" Multiplicity="1" />
+    <End Role="Movies" Type="Self.Movies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="AreaID" />
+      </Principal>
+      <Dependent Role="Movies">
+        <PropertyRef Name="AreaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movies_Comment">
+    <End Role="Comment" Type="Self.Comment" Multiplicity="0..1" />
+    <End Role="Movies" Type="Self.Movies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comment">
+        <PropertyRef Name="CommentID" />
+      </Principal>
+      <Dependent Role="Movies">
+        <PropertyRef Name="CommentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movies_Language">
+    <End Role="Language" Type="Self.Language" Multiplicity="1" />
+    <End Role="Movies" Type="Self.Movies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="LanguageID" />
+      </Principal>
+      <Dependent Role="Movies">
+        <PropertyRef Name="LanguageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MovieTheater_Movies">
+    <End Role="Movies" Type="Self.Movies" Multiplicity="0..1" />
+    <End Role="MovieTheater" Type="Self.MovieTheater" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="MovieID" />
+      </Principal>
+      <Dependent Role="MovieTheater">
+        <PropertyRef Name="MovieID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Movies">
+    <End Role="Movies" Type="Self.Movies" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="MovieID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="MovieID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Relation_Movies">
+    <End Role="Movies" Type="Self.Movies" Multiplicity="1" />
+    <End Role="Relation" Type="Self.Relation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="MovieID" />
+      </Principal>
+      <Dependent Role="Relation">
+        <PropertyRef Name="MovieID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Relation_Relation">
+    <End Role="MovieTypes" Type="Self.MovieTypes" Multiplicity="1" />
+    <End Role="Relation" Type="Self.Relation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MovieTypes">
+        <PropertyRef Name="MovieTypeID" />
+      </Principal>
+      <Dependent Role="Relation">
+        <PropertyRef Name="MovieTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeaterRelation_Movies">
+    <End Role="Movies" Type="Self.Movies" Multiplicity="1" />
+    <End Role="TeaterRelation" Type="Self.TeaterRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movies">
+        <PropertyRef Name="MovieID" />
+      </Principal>
+      <Dependent Role="TeaterRelation">
+        <PropertyRef Name="MovieID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeaterRelation_MovieTheater">
+    <End Role="MovieTheater" Type="Self.MovieTheater" Multiplicity="1" />
+    <End Role="TeaterRelation" Type="Self.TeaterRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MovieTheater">
+        <PropertyRef Name="TheaterID" />
+      </Principal>
+      <Dependent Role="TeaterRelation">
+        <PropertyRef Name="TheaterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Language" EntityType="Self.Language" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Movies" EntityType="Self.Movies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MovieTheater" EntityType="Self.MovieTheater" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MovieTypes" EntityType="Self.MovieTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Relation" EntityType="Self.Relation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeaterRelation" EntityType="Self.TeaterRelation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Comment_Users" Association="Self.FK_Comment_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movies_Area" Association="Self.FK_Movies_Area">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Movies" EntitySet="Movies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movies_Comment" Association="Self.FK_Movies_Comment">
+      <End Role="Comment" EntitySet="Comment" />
+      <End Role="Movies" EntitySet="Movies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movies_Language" Association="Self.FK_Movies_Language">
+      <End Role="Language" EntitySet="Language" />
+      <End Role="Movies" EntitySet="Movies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MovieTheater_Movies" Association="Self.FK_MovieTheater_Movies">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="MovieTheater" EntitySet="MovieTheater" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Movies" Association="Self.FK_Orders_Movies">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Relation_Movies" Association="Self.FK_Relation_Movies">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="Relation" EntitySet="Relation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Relation_Relation" Association="Self.FK_Relation_Relation">
+      <End Role="MovieTypes" EntitySet="MovieTypes" />
+      <End Role="Relation" EntitySet="Relation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeaterRelation_Movies" Association="Self.FK_TeaterRelation_Movies">
+      <End Role="Movies" EntitySet="Movies" />
+      <End Role="TeaterRelation" EntitySet="TeaterRelation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeaterRelation_MovieTheater" Association="Self.FK_TeaterRelation_MovieTheater">
+      <End Role="MovieTheater" EntitySet="MovieTheater" />
+      <End Role="TeaterRelation" EntitySet="TeaterRelation" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

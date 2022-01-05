@@ -1,0 +1,222 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-image:linear-gradient(135deg, deepskyblue -10%,white 20% 80%, red 155%);
+	background-attachment: fixed;
+}
+#all
+{
+	width: 1100px;
+	margin: 90px auto;
+	text-align: center;
+	background: white;
+}
+/*顶部导航栏样式*/
+.page-top
+{	
+	overflow: hidden;
+	height: 85px;
+	line-height: 85px;
+	box-shadow: 0px 2px 8px 1px gray;
+	z-index: 100;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+}
+.page-top_all ul li a{
+	text-align: center;
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    width: 100%;
+    font-size: 18px;
+}
+.page-top_all
+{
+	margin: 0px auto;
+	width: 1440px;
+}
+.page-top_logo
+{
+	float: left;
+	margin-left: 125px;
+	margin-right: 10px;
+	position: relative;
+	top: -15px;
+}
+.page-top_place
+{
+	float: left;
+	border: none;
+	margin-top: 40px;
+}
+.page-top ul li
+{
+	float: left;
+	width: 80px;
+	text-align: center;
+	margin: 0px 8px;
+}
+a
+{
+	color: black;
+}
+.page-top_all ul li a:hover
+{
+	color: white;
+}
+.page-top ul li:hover
+{
+	background: red;
+	color: white;
+}
+.page-top_lookup
+{
+	float: left;
+}
+.Txtlookup
+{
+	margin-left: 15px;
+	width: 100px;
+	height: 38px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 40px;
+	border: solid 1px gray;
+	font-size: 12px;
+}
+.Btnlookup
+{
+	margin-left: -38px;
+	height: 42px;
+	width: 42px;
+	color: white;
+	background: red;
+	border: 1px solid red;
+	border-radius: 50%;
+	font-size: 12px;
+	cursor: pointer;
+}
+.Btnlookup:hover
+{
+	background-color: darkred;
+}
+        /*用户部分*/
+.page-top_user
+{
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	height: 100x;
+	overflow: hidden;
+	position: relative;
+}
+.page-top_user div
+{
+	float: left;
+	margin-left: 5px;
+}
+.userlist
+{
+	border: 1px solid gainsboro;
+	width: 120px;
+	text-align: center;
+	height: auto;
+	background-color: white;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 85px;
+}
+.page-top .userlist a
+{
+	height: 45px;
+	line-height: 45px;
+}
+.page-top .userlist a:hover
+{
+	color: red;
+}
+
+
+/*------------内容部分------------*/
+.con_title
+{
+	text-align: left;
+	font-size: 20px;
+	margin-top: 60px;
+	padding-top: 25px;
+}
+.con_title span
+{
+	font-weight: bold;
+	color: red;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+     /*资讯列表*/
+.news1
+{
+	overflow: hidden;
+	margin-left: 40px;
+	margin-top: 20px;
+	border-bottom: 1px solid gray;
+	height: 150px;
+	width: 725px;
+}
+.news1 img
+{
+	float: left;
+}
+.news_con
+{
+	float: left;
+	margin-left: 20px;
+}
+.news_con p
+{
+	width: 500px;
+	text-align: left;
+	margin-top: 10px;
+}
+.news_info
+{
+	width: 500px;
+	font-size: 12px;
+	color: gray;
+}
+.news_con .news_date
+{
+	font-size: 12px;
+	color: gray;
+	margin-top: 20px;
+}
+/*---------分页功能----------*/
+.topage
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.topage a
+{
+	border: 1px solid gray;
+	padding: 5px 12px;
+	margin: 3px 3px;
+}
+.topage .topagebtn:hover
+{
+	border: 1.5px solid red;
+}
+.topageclass
+{
+	background: red;
+	color: white;
+}

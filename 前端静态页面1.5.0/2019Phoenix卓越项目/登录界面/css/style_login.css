@@ -1,0 +1,59 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+.all{
+	width: 1440px;
+	height: 100%;
+	margin: 0px auto;
+}
+form{
+	width: 500px;
+	height: 500px;
+	margin-left: 800px;
+}
+#userName{
+	width: 230px;
+	height: 30px;
+	
+}
+#userPwd{
+	width: 230px;
+	height: 30px;
+}
+#loss{
+	font-size: 0.9em;
+	color: red;
+	margin-left: 175px;
+	margin-top: 15px;
+}
+.loss1{
+	height: 30px;
+	line-height: 20px;
+}
+#btn{
+	width: 243px;
+	height: 30px;
+	background-color: red;
+	margin-top: 5px;
+}
+.create{
+	padding-top: 6px;
+}
+#creat2{
+	color: red;
+	font-size: 0.9em;
+}
+#userName,#userPwd{
+	margin-top: 12px;
+	padding-left: 10px;
+}
+.imgs{
+	margin-left: 300px;
+}
+#t1,#t2{
+	margin-left: 10px;
+	color: red;
+	font-size: 0.83em;
+}

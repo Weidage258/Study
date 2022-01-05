@@ -1,0 +1,314 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-image:linear-gradient(135deg, deepskyblue -10%,white 20% 80%, red 155%);
+	background-attachment: fixed;
+}
+#all
+{
+	width: 1540px;
+	margin: 0px auto;
+}
+/*顶部导航栏样式*/
+.page-top
+{	
+	overflow: hidden;
+	height: 85px;
+	line-height: 85px;
+	box-shadow: 0px 2px 8px 1px gray;
+	z-index: 100;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+}
+.page-top_all ul li a{
+	text-align: center;
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    width: 100%;
+    font-size: 18px;
+}
+.page-top_all
+{
+	margin: 0px auto;
+	width: 1440px;
+}
+.page-top_logo
+{
+	float: left;
+	margin-left: 125px;
+	margin-right: 10px;
+	position: relative;
+	top: -15px;
+}
+.page-top_place
+{
+	float: left;
+	border: none;
+	margin-top: 40px;
+}
+.page-top ul li
+{
+	float: left;
+	width: 80px;
+	text-align: center;
+	margin: 0px 8px;
+}
+a
+{
+	color: black;
+}
+.page-top_all ul li a:hover
+{
+	color: white;
+}
+.page-top ul li:hover
+{
+	background: red;
+	color: white;
+}
+.page-top_lookup
+{
+	float: left;
+}
+.Txtlookup
+{
+	margin-left: 15px;
+	width: 100px;
+	height: 38px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 40px;
+	border: solid 1px gray;
+	font-size: 12px;
+}
+.Btnlookup
+{
+	margin-left: -38px;
+	height: 42px;
+	width: 42px;
+	color: white;
+	background: red;
+	border: 1px solid red;
+	border-radius: 50%;
+	font-size: 12px;
+	cursor: pointer;
+}
+.Btnlookup:hover
+{
+	background-color: darkred;
+}
+        /*用户部分*/
+.page-top_user
+{
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	height: 100x;
+	overflow: hidden;
+	position: relative;
+}
+.page-top_user div
+{
+	float: left;
+	margin-left: 5px;
+}
+.userlist
+{
+	border: 1px solid gainsboro;
+	width: 120px;
+	text-align: center;
+	height: auto;
+	background-color: white;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 85px;
+}
+.page-top .userlist a
+{
+	height: 45px;
+	line-height: 45px;
+}
+.page-top .userlist a:hover
+{
+	color: red;
+}
+/*中间轮播样式*/
+
+.page-center
+{
+	margin: 85px auto;
+	width: 76%;
+}
+
+.page-center_imgdiv img
+{
+	width: 100%;
+	height: 100%;
+}
+
+/*影片列表样式*/
+/*正在热映*/
+.page-contain
+{
+	width: 1200px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+.page-contain_left
+{
+	width: 865px;
+	float: left;
+}
+.page-contain_left-title 
+{
+	color: red;
+	font-size: 26px;
+}
+.page-contain_left-all
+{
+	color: red;
+	position: relative;
+	left: 690px;
+}
+.page-contain_left-info
+{
+	overflow: hidden;
+}
+.page-contain_left-info dl
+{
+	float: left;
+	margin: 15px 10px;
+}
+.page-contain_left-info dl dd
+{
+	text-align: center;
+}
+.BtnBuy
+{
+	background-color: transparent;
+	border: 1px solid gray;
+	height: 30px;
+	width: 80px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.BtnBuy:hover
+{
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+
+/*----*/
+.page-contain_right
+{
+	width: 320px;
+	float: left;
+	height: 100%;
+	margin-left: 15px;
+}
+.page-contain_right img
+{
+	width: 100%;
+}
+
+/*即将上映*/
+.page-contain2
+{
+	width: 1200px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+.page-contain2_left
+{
+	width: 860px;
+	float: left;
+}
+.page-contain2_left-title 
+{
+	color: blue;
+	font-size: 26px;
+}
+.page-contain2_left-all
+{
+	color: blue;
+	position: relative;
+	left: 690px;
+}
+.page-contain2_left-info
+{
+	overflow: hidden;
+}
+.page-contain2_left-info dl
+{
+	float: left;
+	margin: 15px 10px;
+}
+.page-contain2_left-info dl dd
+{
+	text-align: center;
+}
+.page-contain2_left-info dl dd p
+{
+	font-size: 12px;
+	color: gray;
+}
+.BtnNext
+{
+	background-color: transparent;
+	height: 30px;
+	width: 80px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.BtnNext:hover
+{
+	background-color: cornflowerblue;
+	color: white;
+	cursor: pointer;
+}
+
+/*----*/
+.page-contain2_left-title2
+{
+	color: goldenrod;
+	font-size: 26px;
+}
+.page-contain2_right
+{
+	width: 320px;
+	float: left;
+	margin-left: 15px;
+}
+
+/*-------------------------右边排行榜模块*/
+.page_tops
+{
+	margin: 50px 35px;
+}
+.page_tops li
+{
+	margin-top: 20px;
+}
+.page_tops-title{
+	font-size: 25px;
+	color: yellowgreen;
+	margin-right: 30px;
+	font-family: "黑体";
+	font-weight:bold;
+	font-style: oblique;
+}
+.tops_1{
+	color: red;
+	font-size: 26px;
+}

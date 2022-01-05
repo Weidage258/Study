@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在线选座</title>
+		<link rel="stylesheet" type="text/css" href="css/BuyMovieTicket.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/a.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function()
+		{
+			$(".userlist").hide();
+			$(".top_list1").parent("li").css("background-color","red");
+			$(".top_list1").css("color","white");
+			$(".page-top_user").click(function()
+			{
+				if($(".userlist").is(":hidden"))
+				{
+					$(".userlist").show();
+					$(".userimge_list>img").attr("src","img/up.png");
+				}
+				else
+				{
+					$(".userlist").hide();
+					$(".userimge_list>img").attr("src","img/down.png");
+				}
+			});
+		});
+	</script>
+<script type="text/javascript">
+	
+			var price = 33.5; //票价
+			$(document).ready(function() {
+				var $cart = $('#selected-seats'), //座位区
+					$counter = $('#counter'), //票数
+					$total = $('#total'); //总计金额
+
+				var sc = $('#seat-map').seatCharts({
+					map: [ //座位图
+						'aaaaaaaaaa',
+						'aaaaaaaaaa',
+						'__________',
+						'aaaaaaaaaa',
+						'aaaaaaaaaa',
+						'aaaaaaaaaa',
+						'aaaaaaaaaa',
+						'aaaaaaaaaa',
+						'aaaaaaaaaa',
+						'aa__aa__aa'
+					],
+					legend: { //定义图例
+						node: $('#legend'),
+						items: [
+							['a', 'available', '可选座'],
+							['a', 'unavailable', '已售出']
+						]
+					},
+					click: function() { //点击事件
+						if(this.status() == 'available') { //可选座
+							$('<li>' + (this.settings.row + 1) + '排' + this.settings.label + '座</li>')
+								.attr('id', 'cart-item-' + this.settings.id)
+								.data('seatId', this.settings.id)
+								.appendTo($cart);
+
+							$counter.text(sc.find('selected').length + 1);
+							$total.text(recalculateTotal(sc) + price);
+
+							return 'selected';
+						} else if(this.status() == 'selected') { //已选中
+							//更新数量
+							$counter.text(sc.find('selected').length - 1);
+							//更新总计
+							$total.text(recalculateTotal(sc) - price);
+
+							//删除已预订座位
+							$('#cart-item-' + this.settings.id).remove();
+							//可选座
+							return 'available';
+						} else if(this.status() == 'unavailable') { //已售出
+							return 'unavailable';
+						} else {
+							return this.style();
+						}
+					}
+				});
+				//已售出的座位
+				sc.get(['4_4', '4_5', '6_6', '6_7', '8_5', '8_6', '8_7', '8_8', '10_1', '10_2']).status('unavailable');
+
+			});
+			//计算总金额
+			function recalculateTotal(sc) {
+				var total = 0;
+				sc.find('selected').each(function() {
+					total += price;
+				});
+
+				return total;
+			}
+</script>
+	</head>
+	<body>
+		<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li>
+						<a href="Page.html">首页</a>
+					</li>
+					<li>
+						<a href="MovieInfoList.html">电影</a>
+					</li>
+					<li>
+						<a href="CinemaList.html">影院</a>
+					</li>
+					<li>
+						<a href="News.html">热点</a>
+					</li>
+					<li>
+						<a href="change.html">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="img/默认用户头像.png" style="width: 85%;margin-top: 25px;"/></div>
+						<div class="userimge_list"><img src="img/down.png"/></div>
+						<div class="userlist">
+							<a href="登录界面/login.html">登录</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div id="all">
+		<div class="demo">
+			<div id="seat-map">
+				<div class="front">屏幕</div>
+			</div>
+				<div class="booking-details">
+				<img src="img/若能与你共乘海浪之上.png" style="width: 120px;"/>
+				<p>影片：<span>若能与你共乘海浪之上</span></p>
+				<p>影厅：<span>IMAX 4号厅</span></p>
+				<p>时间：<span>12月10日 21:00</span></p>
+				<p>座位：</p>
+				<ul id="selected-seats"></ul>
+				<p>票数：<span id="counter">0</span></p>
+				<p>总计：<b>￥<span id="total">0</span></b></p>
+				<p>联系方式：<input type="text" class="input_tel" placeholder="请输入手机号码" /></p>
+				<button class="checkout-button">确定购买</button>
+				<div id="legend"></div>
+				</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/userinfo.css"/>
+		<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function()
+		{
+			$(".right1").hide();
+			$(".left_2").addClass("isclass");
+			$(".left_1").click(function()
+			{
+				if ($(".right1").is(":hidden")) 
+				{
+					$(".right1").show();
+					$(".right2").hide();
+					$(".left_2").removeClass("isclass");
+					$(".left_1").addClass("isclass");
+				}
+			});
+			$(".left_2").click(function()
+			{
+				if ($(".right2").is(":hidden")) 
+				{
+					$(".right2").show();
+					$(".right1").hide();
+					$(".left_1").removeClass("isclass");
+					$(".left_2").addClass("isclass");
+				}
+			});
+			
+			
+			/*导航栏部分*/
+			$(".userlist").hide();
+			$(".top_list1").parent("li").css("background-color","red");
+			$(".top_list1").css("color","white");
+			$(".page-top_user").click(function()
+			{
+				if($(".userlist").is(":hidden"))
+				{
+					$(".userlist").show();
+					$(".userimge_list>img").attr("src","../img/up.png");
+				}
+				else
+				{
+					$(".userlist").hide();
+					$(".userimge_list>img").attr("src","../img/down.png");
+				}
+			});
+		});
+	</script>
+	</head>
+	
+	<body>
+			<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li>
+						<a href="../Page.html">首页</a>
+					</li>
+					<li>
+						<a href="../MovieInfoList.html">电影</a>
+					</li>
+					<li>
+						<a href="../CinemaList.html">影院</a>
+					</li>
+					<li>
+						<a href="../News.html">热点</a>
+					</li>
+					<li>
+						<a href="../change.html">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="../img/默认用户头像.png" style="width: 85%;margin-top: 25px;"/></div>
+						<div class="userimge_list"><img src="../img/down.png"/></div>
+						<div class="userlist">
+							<a href="userinfo.html">个人信息</a>
+							<p><a href="../Page.html">退出</a></p>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div id="all">
+			<div class="left">
+				<h2>个人中心</h2>
+				<ul>				
+					<li class="left_1"><a href="#">我的订单</a></li>
+					<li class="left_2"><a href="#">基本信息</a></li>
+				</ul>
+			</div>
+			<div class="right right1">
+				<p class="order-title">我的订单</p>
+				<div class="right-con">
+					<div class="box">
+						<p class="datetimes">12-18 20:18</p>
+						<img src="../img/南方车站的聚会.png"/>
+						<ul>
+							<li>
+								<h3>《南方车站的聚会》</h3>
+								<p>横店电影城（王府井店）</p>
+								<p>4号激光厅 4排5坐 5排6坐</p>
+								<p class="t2">周六 12月14日 21:25</p>
+							</li>
+							<li class="t1">&yen;76</li>
+							<li class="t1">已完成</li>
+							
+						</ul>
+					</div>
+					<div class="box">
+						<p class="datetimes">12-18 20:18</p>
+						<img src="../img/南方车站的聚会.png"/>
+						<ul>
+							<li>
+								<h3>《南方车站的聚会》</h3>
+								<p>横店电影城（王府井店）</p>
+								<p>4号激光厅 4排5坐 5排6坐</p>
+								<p class="t2">周六 12月14日 21:25</p>
+							</li>
+							<li class="t1">&yen;76</li>
+							<li class="t1">已完成</li>
+							
+						</ul>
+					</div>
+					<div class="box">
+						<p class="datetimes">12-18 20:18</p>
+						<img src="../img/南方车站的聚会.png"/>
+						<ul>
+							<li>
+								<h3>《南方车站的聚会》</h3>
+								<p>横店电影城（王府井店）</p>
+								<p>4号激光厅 4排5坐 5排6坐</p>
+								<p class="t2">周六 12月14日 21:25</p>
+							</li>
+							<li class="t1">&yen;76</li>
+							<li class="t1">已完成</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="right right2">
+				<p class="order-title">基本信息</p>
+				<div class="right-con">
+					<form action="#" method="post">
+						<table >
+							<tr>
+								<td><img src="../img/用户图标2.png"/></td>
+								<td>昵称:</td>
+								<td>
+									<input type="text" value="显示昵称"/>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>生日：</td>
+								<td>
+									<input type="date" value="" />
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>性别：</td>
+								<td>
+									<select name="sex">
+									<option value="男">男</option>
+									<option value="女">女</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>电话号码：</td>
+								<td>13889898888</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>账户金额：</td>
+								<td>888元&nbsp;&nbsp;&nbsp;<input type="button" value="充值" class="btnmoney"/></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td colspan="2">个性说明：<br />
+									<textarea name="" rows="5" cols="53" style="resize: none;"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td></td><td></td><td><input type="submit" class="btninput" value="保存"/></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+		</div>
+	</body>
+</html>

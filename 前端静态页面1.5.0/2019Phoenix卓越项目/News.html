@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/News.css"/>
+	</head>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function()
+		{
+			$(".topage_last").hide();
+			$(".topage_1").addClass("topageclass");
+			//导航栏
+			$(".top_list4").css("color","white");
+			$(".top_list4").parent().css("background","red");
+			
+			$(".userlist").hide();
+			$(".page-top_user").click(function()
+			{
+				if($(".userlist").is(":hidden"))
+				{
+					$(".userlist").show();
+					$(".userimge_list>img").attr("src","img/up.png");
+				}
+				else
+				{
+					$(".userlist").hide();
+					$(".userimge_list>img").attr("src","img/down.png");
+				}
+			});
+		});
+			
+	</script>
+	<body>
+		<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li class="top_ul_li">
+						<a href="Page.html" class="top_list1">首页</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="MovieInfoList.html" class="top_list2">电影</a>
+					</li class="top_ul_li">
+					<li class="top_ul_li">
+						<a href="CinemaList.html" class="top_list3">影院</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="News.html" class="top_list4">热点</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="change.html" class="top_list5">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="img/默认用户头像.png" style="width: 85%;margin-top: 25px;"/></div>
+						<div class="userimge_list"><img src="img/down.png"/></div>
+						<div class="userlist">
+							<a href="登录界面/login.html">登录</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div id="all" class="news_page1">
+			<p class="con_title"><span>|</span>新闻资讯</p>
+			<div class="news1">
+				<img src="img/a_movienews/news1.png"/>
+				<div class="news_con">
+					<p><a href="#">刘翔夫妇罕现身，却一前一后不同行，吴莎造型别致气质不如葛天？</a></p>
+					<p class="news_info">12月16日有记者在上海虹桥机场偶遇刘翔、吴莎夫妇，二人虽一同出现在机场，但一前一后并没有并肩同行。刘翔可谓全副武装，上身穿浅绿色的打底衫搭配灰色连帽卫衣，下身搭配一条合身翻边...</p>
+					<p class="news_date">2019-12-17</p>
+				</div>
+			</div>
+			<div class="news1">
+				<img src="img/a_movienews/news1.png"/>
+				<div class="news_con">
+					<p><a href="#">刘翔夫妇罕现身，却一前一后不同行，吴莎造型别致气质不如葛天？</a></p>
+					<p class="news_info">12月16日有记者在上海虹桥机场偶遇刘翔、吴莎夫妇，二人虽一同出现在机场，但一前一后并没有并肩同行。刘翔可谓全副武装，上身穿浅绿色的打底衫搭配灰色连帽卫衣，下身搭配一条合身翻边...</p>
+					<p class="news_date">2019-12-17</p>
+				</div>
+			</div>
+			<div class="news1">
+				<img src="img/a_movienews/news1.png"/>
+				<div class="news_con">
+					<p><a href="#">刘翔夫妇罕现身，却一前一后不同行，吴莎造型别致气质不如葛天？</a></p>
+					<p class="news_info">12月16日有记者在上海虹桥机场偶遇刘翔、吴莎夫妇，二人虽一同出现在机场，但一前一后并没有并肩同行。刘翔可谓全副武装，上身穿浅绿色的打底衫搭配灰色连帽卫衣，下身搭配一条合身翻边...</p>
+					<p class="news_date">2019-12-17</p>
+				</div>
+			</div>
+			<div class="news1">
+				<img src="img/a_movienews/news1.png"/>
+				<div class="news_con">
+					<p><a href="#">刘翔夫妇罕现身，却一前一后不同行，吴莎造型别致气质不如葛天？</a></p>
+					<p class="news_info">12月16日有记者在上海虹桥机场偶遇刘翔、吴莎夫妇，二人虽一同出现在机场，但一前一后并没有并肩同行。刘翔可谓全副武装，上身穿浅绿色的打底衫搭配灰色连帽卫衣，下身搭配一条合身翻边...</p>
+					<p class="news_date">2019-12-17</p>
+				</div>
+			</div>
+			<div class="news1">
+				<img src="img/a_movienews/news1.png"/>
+				<div class="news_con">
+					<p><a href="#">刘翔夫妇罕现身，却一前一后不同行，吴莎造型别致气质不如葛天？</a></p>
+					<p class="news_info">12月16日有记者在上海虹桥机场偶遇刘翔、吴莎夫妇，二人虽一同出现在机场，但一前一后并没有并肩同行。刘翔可谓全副武装，上身穿浅绿色的打底衫搭配灰色连帽卫衣，下身搭配一条合身翻边...</p>
+					<p class="news_date">2019-12-17</p>
+				</div>
+			</div>
+			<div class="topage">
+				<a href="#" class="topage_last topagebtn"><span>上一页</span></a>
+				<a  class="topage_1"><span>1</span></a>
+				<a  class="topage_2"><span>2</span></a>
+				<a href="#" class="topage_next topagebtn"><span>下一页</span></a>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/style_login.css" />
+	</head>
+<script type="text/javascript">
+	$(function(){
+		var username=$("#userName").val();
+		$("#userName").blur(function(){
+		if(username.trim()==""||username.trim()==null){
+		$("#t1").text("用户名不能为空");
+		}
+		else
+		{
+			$("#t1").text("");
+		}
+	});
+	})
+</script>
+	<body>
+		
+		<div class="all">
+			<div class="imgs"><img src="img/logo.jpg" /></div>
+			<form class="">
+				<table>
+					<tr>
+						<td>账号登录</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" id="userName" placeholder="用户名/手机号" />
+							<label id="t1"></label>
+						</td>
+
+					</tr>
+					<tr>
+						<td>
+							<input type="password" id="userPwd" placeholder="密码" />
+							<label id="t2"></label>
+						</td>
+					</tr>
+					<tr>
+						<td class="loss1">
+							<a href="#" id="loss">忘记密码?</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="userinfo.html"><input type="button" id="btn" value="登录" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="create">
+							<span id="creat1">还没有账号？</span>
+							<a href="register.html" id="creat2">免费注册</a>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+		</div>
+	</body>
+
+</html>
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/Page.css" />
+		<link rel="stylesheet" href="css/layui.css" media="all">
+	</head>
+	<script src="js/layui.all.js " charset="utf-8"></script>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function()
+		{
+			$(".userlist").hide();
+			$(".top_list1").parent("li").css("background-color","red");
+			$(".top_list1").css("color","white");
+			$(".page-top_user").click(function()
+			{
+				if($(".userlist").is(":hidden"))
+				{
+					$(".userlist").show();
+					$(".userimge_list>img").attr("src","img/up.png");
+				}
+				else
+				{
+					$(".userlist").hide();
+					$(".userimge_list>img").attr("src","img/down.png");
+				}
+			});
+		});
+	</script>
+	<body>
+		<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li class="top_ul_li">
+						<a href="#" class="top_list1">首页</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="MovieInfoList.html" class="top_list2">电影</a>
+					</li class="top_ul_li">
+					<li class="top_ul_li">
+						<a href="CinemaList.html" class="top_list3">影院</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="News.html" class="top_list4">热点</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="change.html" class="top_list5">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="img/默认用户头像.png" style="width: 85%;"/></div>
+						<div class="userimge_list"><img src="img/down.png"/></div>
+						<div class="userlist">
+							<a href="登录界面/login.html">登录</a>
+						</div>
+					</div>
+				</ul>
+				
+			</div>
+		</div>
+			<div id="all">
+				<div class="page-center">
+					<div class="layui-carousel" id="test10">
+						<div carousel-item="" class="page-center_imgdiv">
+							<div><img src="img/111111.png" class="img-pic"></div>
+							<div><img src="img/22222222222222.png" class="img-pic"></div>
+							<div><img src="img/33333.png" class="img-pic"></div>
+							<div><img src="img/44444.png" class="img-pic"></div>
+						</div>
+					</div>
+		<script>
+			layui.use(['carousel', 'form'], function() {
+				var carousel = layui.carousel,
+					form = layui.form;
+				//图片轮播
+				carousel.render({
+					elem: '#test10',
+					width: '1100px',
+					height: '380px',
+					interval: 5000
+				});
+				$('.demoTest .layui-btn').on('click', function() {
+					var othis = $(this),
+						type = othis.data('type');
+					active[type] ? active[type].call(this, othis) : '';
+				});
+			});
+		</script>
+					
+				</div>
+				<div class="page-contain">
+					<div class="page-contain_left">
+						<span class="page-contain_left-title">正在热映</span>
+						<a href="#"><span class="page-contain_left-all">全部…</span></a>
+						<div class="page-contain_left-info info1">
+							<dl>
+								<dt><img src="img/冰雪奇缘2.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+							<dl>
+								<dt><img src="img/一生有你2019.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+							<dl>
+								<dt><img src="img/两只老虎.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+							<dl>
+								<dt><img src="img/利刃出鞘.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+						</div>
+						<div class="page-contain_left-info info2">
+							<dl>
+								<dt><img src="img/勇者游戏2：再战巅峰.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+							<dl>
+								<dt><img src="img/南方车站的聚会.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+							<dl>
+								<dt><img src="img/吹哨人.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+							<dl>
+								<dt><img src="img/星际探险.png"/></dt>
+								<dd><input type="button" class="BtnBuy" value="购票" /></dd>
+							</dl>
+						</div>
+					</div>
+					<div class="page-contain_right">
+						<span class="page-contain_left-title">今日票房</span>
+						<ul class="page_tops">
+							<li><span class="page_tops-title tops_1">1&nbsp;&nbsp;</span>
+								<a href="#all">勇敢者游戏2：再战巅峰</a>
+							</li>
+							<li><span class="page_tops-title">2&nbsp;&nbsp;</span>
+								<a href="#all">南方车站的聚会</a>
+							</li>
+							<li><span class="page_tops-title">3&nbsp;&nbsp;</span>
+								<a href="#all">冰雪奇缘2</a>
+							</li>
+							<li><span class="page_tops-title">4&nbsp;&nbsp;</span>
+								<a href="MovieInfo.html">若能与你共乘海浪之上</a>
+							</li>
+							<li><span class="page_tops-title">5&nbsp;&nbsp;</span>
+								<a href="#all">利刃出鞘</a>
+							</li>
+							<li><span class="page_tops-title">6&nbsp;&nbsp;</span>
+								<a href="#all">星际探险</a>
+							</li>
+							<li><span class="page_tops-title">7&nbsp;&nbsp;</span>
+								<a href="#all">吹哨人</a>
+							</li>
+							<li><span class="page_tops-title">8&nbsp;&nbsp;</span>
+								<a href="#all">误杀</a>
+							</li>
+							<li><span class="page_tops-title">9&nbsp;&nbsp;</span>
+								<a href="#all">两只老虎</a>
+							</li>
+							<li><span class="page_tops-title">10&nbsp;</span>
+								<a href="#all">我为你牺牲</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-contain2">
+					<div class="page-contain2_left">
+						<span class="page-contain2_left-title">即将上映</span>
+						<a href="#"><span class="page-contain2_left-all">全部…</span></a>
+						<div class="page-contain2_left-info info1">
+							<dl>
+								<dt><img src="img/老伴，让我们再爱一次.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/若能与你共乘海浪之上.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/叶问4.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月20日上映</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/红旗渠之归来仍是少年.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="page-contain2_left-info info2">
+							<dl>
+								<dt><img src="img/姜子牙.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/迷局伏香.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/镜仙.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/世界上最遥远的距离.png"/></dt>
+								<dd><input type="button" class="BtnNext" value="预告" /></dd>
+								<dd>
+									<p>12月10日上映</p>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="page-contain2_right">
+						<span class="page-contain2_left-title2">最受期待</span>
+						<ul class="page_tops">
+							<li><span class="page_tops-title tops_1">1&nbsp;&nbsp;</span>
+								<a href="#all">唐人街探案3</a>
+							</li>
+							<li><span class="page_tops-title">2&nbsp;&nbsp;</span>
+								<a href="#all">姜子牙</a>
+							</li>
+							<li><span class="page_tops-title">3&nbsp;&nbsp;</span>
+								<a href="#all">叶问4</a>
+							</li>
+							<li><span class="page_tops-title">4&nbsp;&nbsp;</span>
+								<a href="#all">紧急救援</a>
+							</li>
+							<li><span class="page_tops-title">5&nbsp;&nbsp;</span>
+								<a href="#all">若能与你共乘海浪之上</a>
+							</li>
+							<li><span class="page_tops-title">6&nbsp;&nbsp;</span>
+								<a href="#all">宠爱</a>
+							</li>
+							<li><span class="page_tops-title">7&nbsp;&nbsp;</span>
+								<a href="#all">囧妈</a>
+							</li>
+							<li><span class="page_tops-title">8&nbsp;&nbsp;</span>
+								<a href="#all">中国女排</a>
+							</li>
+							<li><span class="page_tops-title">9&nbsp;&nbsp;</span>
+								<a href="#all">误杀</a>
+							</li>
+							<li><span class="page_tops-title">10&nbsp;</span>
+								<a href="#all">唐顿庄园</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<br /><br /><br /><br /><br /><br />
+		</div>
+	</body>
+</html>

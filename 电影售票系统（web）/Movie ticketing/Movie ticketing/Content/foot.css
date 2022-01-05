@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.jiobu {
+    /*-webkit-text-size-adjust: 100%;*/
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    background-color: #262426;
+    padding: 56px 0;
+    margin: 0 auto;
+    min-width: 1200px;
+    margin-top: 500px;
+    visibility: visible;
+}
+
+.friendly-links a {
+    /*-webkit-text-size-adjust: 100%;*/
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    visibility: visible;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: transparent;
+    text-decoration: none;
+    color: #ccc !important;
+}
+
+.friendly-links {
+    /*-webkit-text-size-adjust: 100%;*/
+    font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*visibility: visible;*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    height: 22px;
+    color: #ccc;
+}
+
+.certificate {
+    -webkit-text-size-adjust: 100%;
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    visibility: visible;
+    margin-top: 20px !important;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.okok {
+    /*-webkit-text-size-adjust: 100%;*/
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*visibility: visible;*/
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: transparent;
+    text-decoration: none;
+    color: #ef4238;
+}
+
+#menu li a {
+    width: 65px;
+    height: 80px;
+    line-height: 55px;
+    text-align: center;
+}
+
+    #menu li a:hover {
+        color: deepskyblue;
+    }
+/*导航*/
+#box {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 0;
+    height: 80px;
+    font-size: 20px;
+}
+/*位置*/
+.address {
+    width: 100px;
+    font-size: 15px;
+}
+/*所选中的标题*/
+#active {
+    background-color: dodgerblue;
+}
+
+    #active a {
+        color: white;
+    }
+/*搜索框*/
+#search {
+    margin-right: 180px;
+    display: flex;
+}
+
+    #search #tb_search {
+        border: 1px solid lightgray;
+        border-radius: 30px;
+    }
+    /*搜索按钮*/
+    #search #bt_search {
+        font-size: 5px;
+        width: 38px;
+        height: 36px;
+        margin-top: 0.5px;
+        margin-left: -35px;
+        border-radius: 50%;
+        background-image: url("../images/Master/search.jpg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 8px;
+    }
+/*登录按钮*/
+#bt_login {
+    margin-left: 35px;
+    height: 38px;
+    width: 38px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}

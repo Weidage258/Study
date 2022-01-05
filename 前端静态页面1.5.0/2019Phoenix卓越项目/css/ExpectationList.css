@@ -1,0 +1,76 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+/*榜单*/
+.center{
+	width: 950px;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 240px;
+}
+.index{
+	float: left;
+	font-size: 50px;
+	margin: 80px 50px;
+	
+}
+.center_img a img{
+	width: 160px;
+	height: 220px;
+}
+.center_img{
+	display: inline-block;
+    width: 160px;
+    height: 220px;
+    position: relative;
+    float: left;
+}
+.center_right{
+	width: 600px;
+	margin-left: 50px;
+	overflow: hidden;
+	height: 230px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+}
+.moviename{
+	font-size: 25px;
+}
+.center_right_left{
+	width: 300px;
+	padding-top: 60px;
+	line-height: 30px;
+	float: left;
+}
+.center_right_right{
+	margin-top: 60px;
+	display: inline-block;
+    text-align: right;
+    width: 260px;
+    vertical-align: top;
+    font-size: 16px;
+	
+}
+.num_1{
+	color: orange;
+	font-size: 20px;
+
+}
+.num_2{
+	color: orange;
+	font-size: 25px;
+    font-weight: bold;
+}
+.num_3{
+	color: darkgray;
+	font-size: 20px;
+}
+.time{
+	color: darkgray;
+}
+.center_right_left p a{
+	color: black;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/change.css" />
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script language="javascript">
+			//			内嵌的页面适应当前父容器的高度
+			function iframeAutoFit(iframeObj) {
+				setTimeout(function() {
+					if(!iframeObj) return;
+					iframeObj.height = (iframeObj.Document ? iframeObj.Document.body.scrollHeight : iframeObj.contentDocument.body.offsetHeight);
+					iframeAutoFit(document.getElementById('test'));
+				}, 20)
+			}
+			window.onload = function() {
+				iframeAutoFit(document.getElementById('test'));
+			};
+		</script>
+		<script type="text/javascript">
+			var i;
+			function menuChange(e) {
+				if(i!=e){
+					//切换下方内嵌框架的地址
+					$("#test").attr("src", e);
+					i=e;
+				}
+			};
+			$(function() {
+				//用户部分
+				$(".userlist").hide();
+				$(".top_list5").parent("li").css("background-color","red");
+				$(".top_list5").css("color","white");
+				$(".page-top_user").click(function()
+				{
+					if($(".userlist").is(":hidden"))
+					{
+						$(".userlist").show();
+						$(".userimge_list>img").attr("src","img/up.png");
+					}
+					else
+					{
+						$(".userlist").hide();
+						$(".userimge_list>img").attr("src","img/down.png");
+					}
+				});
+				
+				$(".change>ul>li>.change_list_1").addClass("active");
+				$(".change_list_1").click(function(){
+					if($(this).hasClass("active"))
+					{
+						$(this).attr("disabled",true);
+						$(".change_list_2").attr("disabled",false);
+						$(".change_list_2").removeClass("active");
+					}
+					else
+					{
+						$(this).addClass("active");
+						$(".change_list_2").attr("disabled",false);
+						$(".change_list_2").removeClass("active");
+					}
+				});
+				$(".change_list_2").click(function(){
+					if($(this).hasClass("active"))
+					{
+						$(this).attr("disabled",true);
+						$(".change_list_1").attr("disabled",false);
+						$(".change_list_1").removeClass("active");
+					}
+					else
+					{
+						$(this).addClass("active");
+						$(".change_list_1").attr("disabled",false);
+						$(".change_list_1").removeClass("active");
+					}
+				});
+			});						
+		</script>
+	</head>
+
+	<body>
+		<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li>
+						<a href="Page.html">首页</a>
+					</li>
+					<li>
+						<a href="MovieInfoList.html">电影</a>
+					</li>
+					<li>
+						<a href="CinemaList.html">影院</a>
+					</li>
+					<li>
+						<a href="News.html">热点</a>
+					</li>
+					<li>
+						<a href="change.html" class="top_list5">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="img/默认用户头像.png" style="width: 85%;margin-top: 25px;"/></div>
+						<div class="userimge_list"> <img src="img/down.png"/> </div>
+						<div class="userlist">
+							<a href="登录界面/login.html">登录</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="top"></div>
+		<div class="change">
+			<ul>
+				<li>
+					<a href="javascript:menuChange('MovieList.html');" class="change_list_1">热映口碑榜</a>
+				</li>
+				<li>
+					<a href="javascript:menuChange('ExpectationList.html');" class="change_list_2">最受期待榜</a>
+				</li>
+			</ul>
+		</div>
+		<iframe src="MovieList.html" frameborder="0" scrolling="no" id="test"></iframe>
+	</body>
+
+</html>

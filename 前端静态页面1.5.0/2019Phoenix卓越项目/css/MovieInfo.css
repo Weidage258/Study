@@ -1,0 +1,382 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+#all
+{
+	width: 1540px;
+	margin: 0px auto;
+}
+/*顶部导航栏样式*/
+.page-top
+{	
+	overflow: hidden;
+	height: 85px;
+	line-height: 85px;
+	box-shadow: 0px 2px 8px 1px gray;
+	z-index: 100;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+}
+.page-top_all ul li a{
+	text-align: center;
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    width: 100%;
+    font-size: 18px;
+}
+.page-top_all
+{
+	margin: 0px auto;
+	width: 1440px;
+}
+.page-top_logo
+{
+	float: left;
+	margin-left: 125px;
+	margin-right: 10px;
+	position: relative;
+	top: -15px;
+}
+.page-top_place
+{
+	float: left;
+	border: none;
+	margin-top: 40px;
+}
+.page-top ul li
+{
+	float: left;
+	width: 80px;
+	text-align: center;
+	margin: 0px 8px;
+}
+a
+{
+	color: black;
+}
+.page-top_all ul li a:hover
+{
+	color: white;
+}
+.page-top ul li:hover
+{
+	background: red;
+	color: white;
+}
+.page-top_lookup
+{
+	float: left;
+}
+.Txtlookup
+{
+	margin-left: 15px;
+	width: 100px;
+	height: 38px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 40px;
+	border: solid 1px gray;
+	font-size: 12px;
+}
+.Btnlookup
+{
+	margin-left: -38px;
+	height: 42px;
+	width: 42px;
+	color: white;
+	background: red;
+	border: 1px solid red;
+	border-radius: 50%;
+	font-size: 12px;
+	cursor: pointer;
+}
+.Btnlookup:hover
+{
+	background-color: darkred;
+}
+        /*用户部分*/
+.page-top_user
+{
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	height: 100x;
+	overflow: hidden;
+	position: relative;
+}
+.page-top_user div
+{
+	float: left;
+	margin-left: 5px;
+}
+.userlist
+{
+	border: 1px solid gainsboro;
+	width: 120px;
+	text-align: center;
+	height: auto;
+	background-color: white;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 85px;
+}
+.page-top .userlist a
+{
+	height: 45px;
+	line-height: 45px;
+}
+.page-top .userlist a:hover
+{
+	color: red;
+}
+
+/*设置中间背景*/
+#color-box
+{
+	background-image:linear-gradient(135deg, deepskyblue 0%, red 70%);
+	width: 100%;
+	height: 450px;
+	z-index: -100;
+	position: absolute;
+	top: 0;
+}
+
+/*--------------------设置中间影片展示部分样式--------------*/
+.top
+{
+	width: 1050px;
+	margin: 20px auto;
+	overflow: hidden;
+	height: 500px;
+}
+.top-img
+{
+	margin-top: 130px;
+	width: 230px;
+	box-shadow: 0px 6px 5px 2px gray;
+	float: left;
+	margin-bottom: 20px;
+}
+.top-contain
+{
+	margin-top: 130px;
+	float: left;
+	color: white;
+}
+.top-contain p
+{
+	margin: 5px 30px;
+}
+.top-contain_title
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+.top-contain_con
+{
+	margin-top: 30px;
+}
+.btnbox{
+	margin-top: 25px;
+}
+#btnComment
+{
+	width: 15em;
+	height: 2.5em;
+	border-radius: 0.2em;
+	border: none;
+	background-color: cornflowerblue;
+	color: white;
+	margin-top: 5px;
+}
+#btnbuy
+{
+	width: 15em;
+	height: 2.5em;
+	border-radius: 0.2em;
+	border: none;
+	background-color: darkgoldenrod;
+	color: white;
+	margin-top: 5px;
+}
+.top-data
+{
+	
+	float: left;
+	color: white;
+	margin: 300px 35px;
+	font-size: 0.8em;
+}
+.top-data span
+{
+	font-size: 2.3em;
+}
+
+
+/*设置中间内容部分样式*/
+.center
+{
+	margin: 10px auto;
+	width: 1100px;
+	overflow: hidden;
+}
+.center-left
+{
+	width: 720px;
+	float: left;
+	margin-bottom: 60px;
+}
+.center-left_list
+{
+	overflow: hidden;
+	border-bottom: 2px solid gainsboro;	
+	width: 700px;
+}
+.center-left_list li
+{
+	float: left;
+	margin-right: 20px;
+}
+.left-list
+{
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.1em;
+}
+.center-left_list li:hover
+{
+	border-bottom: 2px solid red;
+}
+.left-list:hover
+{
+	color: red;
+}
+.text-title
+{
+	margin: 20px 0;
+	font-size: 1.1em;
+	color: green;
+}
+.text
+{
+	width: 700px;
+}
+
+.center-right
+{
+	margin-left: 15px;
+	width: 360px;
+	float: left;
+}
+.movie-list
+{
+	text-align: center;
+	overflow: hidden;
+}
+.movie-list dl
+{
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.movie-list dl dt img
+{
+	width: 100px;
+}
+.movie_score
+{
+	font-style: oblique;
+	font-size: 0.8em;
+	color: yellowgreen;
+}
+
+.center-bottom
+{
+	float: left;
+	width: 1080px;
+}
+.btnwrite
+{
+	margin-left: 580px;
+	border: 1px solid green;
+	color: green;
+	background-color: transparent;
+	height: 25px;
+	width: 60px;
+	border-radius:15px ;
+	cursor: pointer;
+}
+.btnwrite:hover
+{
+	color: white;
+	background-color: green;
+}
+input
+{
+	cursor: pointer;
+}
+
+
+/*-------------评论界面样式-----------------*/
+
+.wirteTxt textarea
+{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	padding: 8px 15px;
+	resize: none;
+}
+.wirteTxt p
+{
+	width: 715px;
+	text-align: right;
+	height: 50px;
+	line-height: 50px;
+}
+.wirteTxt p input
+{
+	width: 80px;
+	height: 28px;
+}
+/*-------用户评论列表界面-------*/
+.wirtelist_con
+{
+	margin-top: 20px;
+	height: auto;
+	padding-bottom: 20px;
+	width: 715px;
+}
+.wirtelist_con img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: left;
+}
+.userinfo
+{
+	margin-left: 70px;
+}
+.wirte_date
+{
+	font-size: 12px;
+	margin-top: 12px;
+}
+.wirte_text
+{
+	font-size: 13px;
+	color: dimgrey;
+	width: 645px;
+	margin-top: 20px;
+	margin-left: 70px;
+	padding-bottom: 25px;
+	border-bottom: 1px dashed darkgray;
+}

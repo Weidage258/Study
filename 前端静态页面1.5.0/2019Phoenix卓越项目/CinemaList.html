@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>影院</title>
+		<link rel="stylesheet" type="text/css" href="css/CinemaList.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<script type="text/javascript">
+		$(function()
+		{
+			var listnum=2;
+			//--分页-- 默认界面隐藏
+			$(".cinemalist"+listnum).hide();
+			$(".topage_last").hide();
+			$(".topage_1").addClass("topageclass");
+			//--分页--下一页
+			$(".topage_next").click(function()
+			{
+				if ($(".cinemalist"+listnum).is(":hidden")) {
+					$(".cinemalist1").hide();
+					$(".cinemalist"+listnum).show();
+					if (true) {
+						$(".topage_last").show();
+						$(".topage_next").hide();
+						$(".topage_2").addClass("topageclass");
+						$(".topage_1").removeClass("topageclass");
+					}
+				}
+			});
+			//--分页--上一页
+			$(".topage_last").click(function()
+			{
+				if ($(".cinemalist1").is(":hidden")) {
+					$(".cinemalist"+listnum).hide();
+					$(".cinemalist1").show();
+					if (true) {
+						$(".topage_next").show();
+						$(".topage_last").hide();
+						$(".topage_1").addClass("topageclass");
+						$(".topage_2").removeClass("topageclass");
+					}
+				}
+			});
+			
+			
+			$(".top_list3").css("background","red");
+			$(".top_list3").parent().css("background","red");
+			$(".top_list3").css("color","white");
+			
+						//用户模块
+			$(".userlist").hide();
+			$(".top_list1").parent("li").css("background-color","red");
+			$(".top_list1").css("color","white");
+			$(".page-top_user").click(function()
+			{
+				if($(".userlist").is(":hidden"))
+				{
+					$(".userlist").show();
+					$(".userimge_list>img").attr("src","img/up.png");
+				}
+				else
+				{
+					$(".userlist").hide();
+					$(".userimge_list>img").attr("src","img/down.png");
+				}
+			});
+		});
+	</script>
+	<body>
+		<div class="page-top">
+			<div class="page-top_all">
+				<a href="index.html"><img src="img/logo.jpg" class="page-top_logo" /></a>
+				<select class="page-top_place">
+					<option value="1">长沙县</option>
+					<option value="2">岳麓区</option>
+					<option value="3">开福区</option>
+				</select>
+				<ul style="overflow: hidden;">
+					<li>
+						<a href="Page.html">首页</a>
+					</li>
+					<li>
+						<a href="MovieInfoList.html">电影</a>
+					</li>
+					<li>
+						<a href="CinemaList.html" class="top_list3">影院</a>
+					</li>
+					<li>
+						<a href="News.html">热点</a>
+					</li>
+					<li class="top_ul_li">
+						<a href="change.html" class="top_list5">榜单</a>
+					</li>
+					<div class="page-top_lookup">
+						<input type="text" class="Txtlookup" placeholder="电影名" />
+						<input type="button" class="Btnlookup" value="搜索" />
+					</div>
+					<div class="page-top_user">
+						<div class="userimge"><img src="img/默认用户头像.png" style="width: 85%;margin-top: 25px;"/></div>
+						<div class="userimge_list"><img src="img/down.png"/></div>
+						<div class="userlist">
+							<a href="登录界面/login.html">登录</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div id="all">
+			<p class="con_title"><span>|</span>影院列表</p>
+			<div class="cinemalist1 contain">
+				<div class="list">
+					<p class="CinemaName"><a href="#">华耀国际影城（泉塘店）</a></p>
+					<p class="CinemaAddres">地址：长沙县小塘路28号工人产业文化活动中心1楼</p>
+					<a href="BuyMovieTicket.html"><input type="button" name="" id="" value="选座购票" /></a>
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">CGV影城（星沙IMAX店）</a></p>
+					<p class="CinemaAddres">地址：长沙县星沙大道178号华润万象汇广场3楼</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">MC影城星都店</a></p>
+					<p class="CinemaAddres">地址：长沙县板仓南路26号尚都花园城6栋2楼</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">万达影城（长沙中茂城店）</a></p>
+					<p class="CinemaAddres">地址：长沙县泉塘街道向阳路中茂城购物中心五楼万达影城</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">太平洋影城（星城艾美店）</a></p>
+					<p class="CinemaAddres">地址：长沙县湘龙街道腾辉路79号艾美潇湘17栋3楼</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">星轶STARX影城（星沙吾悦广场STARX店）</a></p>
+					<p class="CinemaAddres">地址：长沙县东四路长沙松雅湖新城吾悦广场4层/p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">芒果国际影城星沙店</a></p>
+					<p class="CinemaAddres">地址：长沙县星沙东六路与盼盼路交汇处（泉塘公园对面）</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+			</div>
+			<div class="cinemalist2 contain">
+				<div class="list">
+					<p class="CinemaName"><a href="#">金逸杜比巨幕影城（保利香槟店）</a></p>
+					<p class="CinemaAddres">地址：长沙县湘龙西路与龙塘路交汇处保利香槟广场3楼</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">MC影城山水湾店</a></p>
+					<p class="CinemaAddres">地址：长沙县万家丽北路与湘龙路交汇处西北角山水湾售楼中心旁</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">恒大嘉凯影城长沙翡翠华庭店</a></p>
+					<p class="CinemaAddres">地址：长沙县星沙街道东四路268号恒大翡翠华庭商业楼三层</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+				<div class="list">
+					<p class="CinemaName"><a href="#">中影畅腾影院</a></p>
+					<p class="CinemaAddres">地址：长沙县星沙镇开元路17号开源鑫贸大楼美美星天地5楼</p>
+					<input type="button" name="" id="" value="选座购票" />
+				</div>
+			</div>
+			
+			<div class="topage">
+				<a href="#" class="topage_last topagebtn"><span>上一页</span></a>
+				<a  class="topage_1"><span>1</span></a>
+				<a  class="topage_2"><span>2</span></a>
+				<a href="#" class="topage_next topagebtn"><span>下一页</span></a>
+			</div>
+		</div>
+	</body>
+</html>

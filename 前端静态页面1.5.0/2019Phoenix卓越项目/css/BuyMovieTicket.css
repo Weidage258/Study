@@ -1,0 +1,299 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-image:linear-gradient(135deg, deepskyblue -10%,white 20% 80%, red 155%);
+	background-attachment: fixed;
+}
+#all
+{
+	text-align: center;
+	width: 980px;
+	margin: 100px auto;
+	border: 1px solid gainsboro;
+	height: 680px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 2px 2px 8px 2px paleturquoise;
+}
+/*顶部导航栏样式*/
+.page-top
+{	
+	overflow: hidden;
+	height: 85px;
+	line-height: 85px;
+	box-shadow: 0px 2px 8px 1px gray;
+	z-index: 100;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+}
+.page-top_all ul li a{
+	text-align: center;
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    width: 100%;
+    font-size: 18px;
+}
+.page-top_all
+{
+	margin: 0px auto;
+	width: 1440px;
+}
+.page-top_logo
+{
+	float: left;
+	margin-left: 125px;
+	margin-right: 10px;
+	position: relative;
+	top: -15px;
+}
+.page-top_place
+{
+	float: left;
+	border: none;
+	margin-top: 40px;
+}
+.page-top ul li
+{
+	float: left;
+	width: 80px;
+	text-align: center;
+	margin: 0px 8px;
+}
+a
+{
+	color: black;
+}
+.page-top_all ul li a:hover
+{
+	color: white;
+}
+.page-top ul li:hover
+{
+	background: red;
+	color: white;
+}
+.page-top_lookup
+{
+	float: left;
+}
+.Txtlookup
+{
+	margin-left: 15px;
+	width: 100px;
+	height: 38px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 40px;
+	border: solid 1px gray;
+	font-size: 12px;
+}
+.Btnlookup
+{
+	margin-left: -38px;
+	height: 42px;
+	width: 42px;
+	color: white;
+	background: red;
+	border: 1px solid red;
+	border-radius: 50%;
+	font-size: 12px;
+	cursor: pointer;
+}
+.Btnlookup:hover
+{
+	background-color: darkred;
+}
+        /*用户部分*/
+.page-top_user
+{
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+	width: 120px;
+	height: 100x;
+	overflow: hidden;
+	position: relative;
+}
+.page-top_user div
+{
+	float: left;
+	margin-left: 5px;
+}
+.userlist
+{
+	border: 1px solid gainsboro;
+	width: 120px;
+	text-align: center;
+	height: auto;
+	background-color: white;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 85px;
+}
+.page-top .userlist a
+{
+	height: 45px;
+	line-height: 45px;
+}
+.page-top .userlist a:hover
+{
+	color: red;
+}
+
+/*----------------------------选座部分-----------------------------------*/
+.front {
+	width: 300px;
+	margin: 20px auto;
+	background-color: #f0f0f0;
+	color: #666;
+	text-align: center;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.booking-details {
+	margin-top: 36px;
+	margin-left: 50px;
+	float: left;
+	position: relative;
+	width: 320px;
+	height: 450px;
+	text-align: left;
+}
+
+.booking-details h3 {
+	margin: 5px 5px 0 0;
+	font-size: 16px;
+}
+
+.booking-details p {
+	line-height: 26px;
+	font-size: 16px;
+	color: #999
+}
+
+.booking-details p span {
+	color: #666
+}
+
+div.seatCharts-cell {
+	color: #182C4E;
+	height: 35px;
+	width: 40px;
+	line-height: 35px;
+	margin: 3px;
+	float: left;
+	text-align: center;
+	outline: none;
+	font-size: 13px;
+}
+
+div.seatCharts-seat {
+	color: #fff;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.seatCharts-row {
+	height: 35px;
+}
+
+div.seatCharts-seat.available {
+	background-image:url(../img/可选.png);
+}
+
+div.seatCharts-seat.focused {
+	background-color: #76B474;
+	border: none;
+}
+
+div.seatCharts-seat.selected {
+	background-image: url(../img/选中.png);
+}
+
+div.seatCharts-seat.unavailable {
+	background-image: url(../img/已选.png);
+	cursor: not-allowed;
+}
+
+div.seatCharts-container {
+	float: left;
+	width: 550px;
+	padding: 20px;
+	float: left;
+}
+
+div.seatCharts-legend {
+	margin-top: 50px;
+	
+}
+
+ul.seatCharts-legendList {
+	padding-left: 0px;
+}
+
+.seatCharts-legendItem {
+	float: left;
+	width: 120px;
+	line-height: 2;
+}
+
+span.seatCharts-legendDescription {
+	margin-left: 5px;
+	line-height: 30px;
+}
+
+.checkout-button {
+	display: block;
+	width: 180px;
+	height: 35px;
+	background-color: green;
+	color: white;
+	line-height: 20px;
+	margin: 35px auto;
+	border: 1px solid #999;
+	font-size: 14px;
+	cursor: pointer
+}
+
+#selected-seats {
+	max-height: 150px;
+	overflow-y: auto;
+	overflow-x: none;
+	width: 200px;
+	height: 82px;
+}
+
+#selected-seats li {
+	float: left;
+	width: 72px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #d3d3d3;
+	background: #f7f7f7;
+	margin: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center
+}
+.input_tel
+{
+	width: 148px;
+	border: 1px solid red;
+	border-radius: 15px;
+	height: 30px;
+	padding-left: 10px;
+	margin-top: 20px;
+	padding-right: 10px;
+}
