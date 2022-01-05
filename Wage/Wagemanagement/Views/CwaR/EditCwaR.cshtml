@@ -1,0 +1,126 @@
+﻿
+
+@model Wagemanagement.Models.Cwa_Records
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditJournal</title>
+    <link rel="stylesheet" type="text/css" href="~/static/layui-v2.6.4/layui-v2.6.4/layui/css/layui.css" />
+    <style>
+        .layui-form-select, .layui-input, .layui-textarea {
+            width: 295px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="layui-form" action="" lay-filter="formTest">
+            <div class="layui-form-item">
+                <label class="layui-form-label">奖金纪录编号</label>
+                <div class="layui-input-block">
+                    <input type="text" name="CR_id" disabled required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">工号</label>
+                <div class="layui-input-block">
+                    <input type="text" name="Staff_id" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">考勤名称</label>
+                <div class="layui-input-block">
+                    <select name="Cwa_Name">
+                        @foreach (var Cwa in ViewBag.info1)
+                        {
+                            <option value="@Cwa.Cwa_Name">@Cwa.Cwa_Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">次数</label>
+                <div class="layui-input-block">
+                    <input type="text" name="CR_Frequency" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">日期</label>
+                <div class="layui-input-block">
+                    <input type="text" name="CR_date" id="CR_date1" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="~/static/layui-v2.6.4/layui-v2.6.4/layui/layui.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        layui.use(['form','laydate'], function () {
+          var laydate = layui.laydate;
+        var form = layui.form;
+               form.val("formTest",
+                   {
+                       "CR_id": "@Model.CR_id",
+                       "Staff_id": "@Model.Staff_id",
+                       "Cwa_Name": "@ViewBag.info",
+                       "CR_date": "@Model.CR_date",
+                       "CR_Frequency": "@Model.CR_Frequency"
+                   });
+            //日期
+            laydate.render({
+                elem: '#CR_date'
+
+
+            });
+            laydate.render({
+                elem: '#CR_date1'
+
+
+            });
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            console.log(data)
+            layer.msg(JSON.stringify(data.field));
+
+            var id = data.field["CR_id"];
+            var Staff_id = data.field["Staff_id"];
+            
+            var Cwa_Name = data.field["Cwa_Name"];
+            var CR_date = data.field["CR_date"];
+            var CR_Frequency = data.field["CR_Frequency"];
+            $.post({
+                url: "/CwaR/UpdateCwaR",
+                data: { CR_id: id,Staff_id: Staff_id,Cwa_Name:Cwa_Name,CR_date:CR_date,CR_Frequency:CR_Frequency},
+                success: res => {
+                    if (res == "True") {
+                        //从父级关闭所有层
+                        parent.layer.closeAll();
+                        parent.layer.msg("修改成功");
+                        //调用父页面的分页确定按钮的点击事件
+                        parent.document.getElementsByClassName("layui-laypage-btn")[1].click();
+                    } else {
+                        layer.msg("数据未修改!");
+                    }
+                }
+            });
+            return false;
+        });
+    });
+    </script>
+</body>
+</html>
+

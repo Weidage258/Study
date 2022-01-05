@@ -1,0 +1,88 @@
+﻿@model Wagemanagement.Models.Staff
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="~/CSS/login/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/login/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/login/component.css" />
+    <script src="js/html5.js"></script>
+</head>
+<body>
+    <div class="container demo-1">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="logo_box">
+
+                    <h3>诚财工资管理</h3>
+
+                    @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+                    {
+                        <div class="input_outer">
+                            <span class="u_user" style="position: absolute; margin: 5px 10px;">
+                                <svg t="1622525406980" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2401" width="35" height="35">
+                                    <path d="M512 1024C229.248 1024 0 794.752 0 512S229.248 0 512 0s512 229.248 512 512-229.248 512-512 512z m0-938.666667C276.352 85.333333 85.333333 276.352 85.333333 512s191.018667 426.666667 426.666667 426.666667 426.666667-191.018667 426.666667-426.666667S747.648 85.333333 512 85.333333z m0 768a340.650667 340.650667 0 0 1-266.24-128A340.650667 340.650667 0 0 1 512 597.333333a340.48 340.48 0 0 1 266.197333 128A340.48 340.48 0 0 1 512 853.333333z m0-298.666666a170.666667 170.666667 0 1 1 0-341.333334 170.666667 170.666667 0 0 1 0 341.333334z" p-id="2402" fill="#8a8a8a">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            @Html.TextBoxFor(model => model.Staff_id, new { placeholder = "请输入账户", style = "color: #ffffff !important", @Class = "text", id = "user", autocomplete = "off" })
+                            <span id="hint" style="color:red"></span>
+
+                        </div>
+                        <div class="input_outer">
+                            <span class="us_uer" style="position: absolute; margin: 5px 10px; }">
+                                <svg t="1622526163817" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4678" width="35" height="35">
+                                    <path d="M811.1 370l-79.8 0c0-128.3-97.9-226.2-222.9-226.2-125 0-222.9 98-222.9 226.2l-79.8 0c0-153.9 135.8-306.1 302.7-306.1C675.3 64 811.1 216.1 811.1 370L811.1 370zM811.1 370" p-id="4679" fill="#8a8a8a"></path>
+                                    <path d="M858.3 501.2c0-44.1-35.8-79.8-79.8-79.8L245.6 421.4c-44.1 0-79.8 35.8-79.8 79.8l0 379c0 44.1 35.8 79.8 79.8 79.8l532.9 0c44.1 0 79.8-35.8 79.8-79.8L858.3 501.2 858.3 501.2zM576.1 797.5c0 33.1-26.8 59.9-59.9 59.9l-8.5 0c-33.1 0-59.9-26.8-59.9-59.9L447.8 635.1c0-33.1 26.8-59.9 59.9-59.9l8.5 0c33.1 0 59.9 26.8 59.9 59.9L576.1 797.5 576.1 797.5zM576.1 797.5" p-id="4680" fill="#8a8a8a">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            @Html.TextBoxFor(model => model.Staff_Pwd, new { placeholder = "请输入密码", style = "color: #ffffff !important;position:absolute; z-index:100;", @Class = "text", type = "password", id = "pwd", autocomplete = "off" })
+                        </div>
+                        <div class="input_outer" style="width: 210px; margin-left: 120px;">
+                            <span class="us_uer" style="position: absolute; margin: 5px 10px; }">
+                                <svg t="1622526417929" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5781" width="35" height="35">
+                                    <path d="M517.094527 1024c-153.345274 0-438.129353-228.234826-438.129353-444.242786V167.60995c0-10.189055 8.151244-17.830846 18.849751-18.340298l24.963184-0.509453c1.018905 0 98.324378-2.037811 198.686568-41.775124C423.864677 66.228856 490.093532 19.359204 491.112438 18.849751l14.774129-10.189054c3.056716-2.037811 7.132338-3.566169 11.20796-3.56617 4.075622 0 8.151244 1.018905 11.207961 3.56617l14.774129 10.698507c0.509453 0.509453 67.247761 47.379104 170.157214 88.135323 100.362189 39.737313 197.667662 41.775124 198.686567 41.775125l24.453731 0.509452c10.189055 0 18.849751 8.151244 18.849752 18.340299v412.147264c0 215.498507-284.78408 443.733333-438.129354 443.733333z m370.881592-808.501493c-37.699502-3.056716-117.174129-12.736318-199.196019-45.341293-84.569154-33.114428-146.212935-70.304478-171.685573-87.116418-25.472637 16.302488-87.116418 54.00199-171.685572 87.116418-82.021891 32.604975-160.987065 42.284577-199.19602 45.341293v364.258707c0 169.138308 248.103483 376.485572 370.881592 376.485572 47.379104 0 140.099502-38.718408 230.78209-123.287562 87.625871-81.512438 140.099502-176.270647 140.099502-253.19801V215.498507z m-406.03383 433.544279c-6.113433 6.622886-14.774129 10.189055-23.944279 10.189055-9.170149 0-17.321393-3.566169-23.944279-10.189055l-101.381094-101.890547a33.827662 33.827662 0 0 1 0-47.888557c13.245771-13.245771 34.133333-13.245771 47.379104-0.509453l0.509453 0.509453 77.436816 77.946268 195.120398-196.648756c12.736318-13.245771 34.133333-13.245771 47.379104-0.509453l0.509453 0.509453c13.245771 13.245771 13.245771 34.642786 0 47.888557l-219.064676 220.593035z" p-id="5782" fill="#8a8a8a">
+                                    </path>
+                                </svg>
+                            </span>
+                            @Html.TextBoxFor(model => model.Staff_Remark, new { placeholder = "请输入验证码", style = "color: #ffffff !important;position:absolute; z-index:100;", @Class = "text", id = "auth_code",autocomplete = "off" })
+                        </div>
+
+                        <button class="auth_code l_float" style="border:none;width:0px; height:0px;position:absolute;top:265px;"><img id="img" src="~/Handlers/ValidCodeHandler.ashx?id=1" onclick="this.src = this.src + 1" alt="Alternate Text" /></button>
+                        <div class="mb2">
+                            <button type="submit" value="" style="background-color: Highlight; width: 330px; height: 40px; border: none; color: white; border-radius: 30px" onclick="isLogin()">
+                                登录
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/JS/Login/TweenLite.min.js"></script>
+    <script src="~/JS/Login/EasePack.min.js"></script>
+    <script src="~/JS/Login/rAF.js"></script>
+    <script src="~/JS/Login/demo-1.js"></script>
+    <script type="text/javascript">
+        function isLogin() {
+            var username = document.getElementById("user").value;
+            var userpwd = document.getElementById("pwd").value;
+            var auth = document.getElementById("auth_code").value;
+            if (username.trim() == "" && userpwd.trim() == "" && auth.trim() == "") {
+                alert("请填写完整信息");
+            }
+        }
+    </script>
+</body>
+</html>

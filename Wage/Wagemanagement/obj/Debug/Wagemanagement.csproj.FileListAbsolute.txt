@@ -1,0 +1,729 @@
+F:\source\Wagemanagement\Wagemanagement\bin\Wagemanagement.dll.config
+F:\source\Wagemanagement\Wagemanagement\bin\Wagemanagement.dll
+F:\source\Wagemanagement\Wagemanagement\bin\Wagemanagement.pdb
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\csc.exe
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\csc.exe.config
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\csc.rsp
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\csi.exe
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\csi.exe.config
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\csi.rsp
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.AppContext.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Console.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Net.Http.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\vbc.exe
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\vbc.exe.config
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\vbc.rsp
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+F:\source\Wagemanagement\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+F:\source\Wagemanagement\Wagemanagement\bin\Antlr3.Runtime.dll
+F:\source\Wagemanagement\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\source\Wagemanagement\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+F:\source\Wagemanagement\Wagemanagement\bin\Newtonsoft.Json.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Helpers.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Mvc.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Optimization.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Razor.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.WebPages.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+F:\source\Wagemanagement\Wagemanagement\bin\WebGrease.dll
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Helpers.xml
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Mvc.xml
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Optimization.xml
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.Razor.xml
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.WebPages.xml
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+F:\source\Wagemanagement\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+F:\source\Wagemanagement\Wagemanagement\bin\Newtonsoft.Json.xml
+F:\source\Wagemanagement\Wagemanagement\bin\Antlr3.Runtime.pdb
+F:\source\Wagemanagement\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+F:\source\Wagemanagement\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+F:\source\Wagemanagement\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+F:\source\Wagemanagement\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+F:\source\Wagemanagement\Wagemanagement\obj\Debug\Wagemanagement.dll
+F:\source\Wagemanagement\Wagemanagement\obj\Debug\Wagemanagement.pdb
+F:\source\Wagemanagement\Wagemanagement\bin\EntityFramework.dll
+F:\source\Wagemanagement\Wagemanagement\bin\EntityFramework.SqlServer.dll
+F:\source\Wagemanagement\Wagemanagement\bin\EntityFramework.xml
+F:\source\Wagemanagement\Wagemanagement\bin\EntityFramework.SqlServer.xml
+F:\source\Wagemanagement\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Wagemanagement.dll.config
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Wagemanagement.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Wagemanagement.pdb
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csi.exe.config
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Console.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.dll
+C:\Users\ASUS\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Wagemanagement.dll.config
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Wagemanagement.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Wagemanagement.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\WebGrease.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.dll
+C:\Users\DELL\Desktop\Wagemanagement(2)\Wagemanagement\obj\Debug\Wagemanagement.pdb
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.pdb
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.dll.config
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.pdb
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.exe
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.exe.config
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.rsp
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.exe
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.exe.config
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.rsp
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.AppContext.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Console.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Net.Http.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.exe
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.exe.config
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.rsp
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.dll.config
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.pdb
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.exe
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.exe.config
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.rsp
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.exe
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.exe.config
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.rsp
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.AppContext.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Console.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Net.Http.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.exe
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.exe.config
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.rsp
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Antlr3.Runtime.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.SqlServer.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Newtonsoft.Json.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Helpers.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Mvc.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Optimization.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Razor.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\WebGrease.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.SqlServer.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Helpers.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Mvc.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Optimization.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Razor.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Newtonsoft.Json.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Antlr3.Runtime.pdb
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.dll
+D:\qq\914654258\FileRecv\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.dll.config
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Wagemanagement.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\WebGrease.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\DELL\Desktop\Wagemanagement(2) (2)\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Wagemanagement.dll.config
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Wagemanagement.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Wagemanagement.pdb
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\WebGrease.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\obj\Debug\Wagemanagement.dll
+C:\Users\DELL\Desktop\G3项目选择\Wagemanagement(2) (2) - 副本\Wagemanagement\obj\Debug\Wagemanagement.pdb
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Wagemanagement.dll.config
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Wagemanagement.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Wagemanagement.pdb
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\WebGrease.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\obj\Debug\Wagemanagement.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\obj\Debug\Wagemanagement.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\obj\Debug\Wagemanagement.csproj.CopyComplete
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\obj\Debug\Wagemanagement.dll
+C:\Users\DELL\Desktop\G3项目选择\Wage\Wagemanagement\obj\Debug\Wagemanagement.pdb

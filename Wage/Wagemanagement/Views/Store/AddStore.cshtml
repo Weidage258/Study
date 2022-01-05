@@ -1,0 +1,107 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditJournal</title>
+    <link rel="stylesheet" type="text/css" href="~/static/layui-v2.6.4/layui-v2.6.4/layui/css/layui.css" />
+    <style>
+        .layui-form-select, .layui-input, .layui-textarea {
+            width: 295px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="layui-form" action="" lay-filter="formTest">
+          
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="Store_Name" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺地址</label>
+                <div class="layui-input-block">
+                    <input type="text" name="Store_Address" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺店长</label>
+                <div class="layui-input-block">
+                    <input type="text" name="StoreLeader" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺状态</label>
+                <div class="layui-input-block">
+                    <input type="text" name="Store_state" required lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">备注</label>
+                <div class="layui-input-block">
+                    <textarea name="Store_Remarks" lay-verify="required" value="无" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="~/static/layui-v2.6.4/layui-v2.6.4/layui/layui.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+    layui.use('form', function(){
+        var form = layui.form;
+
+    
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            console.log(data)
+            layer.msg(JSON.stringify(data.field));
+
+           
+            var Store_Name = data.field["Store_Name"];
+            var Store_Address = data.field["Store_Address"];
+            var StoreLeader = data.field["StoreLeader"];
+            var Store_state = data.field["Store_state"];
+            var Store_Remarks = data.field["Store_Remarks"];
+
+            $.post({
+                url: "UpdateStoredate",
+                data: {  Store_Name: Store_Name, Store_Address: Store_Address, StoreLeader: StoreLeader, Store_state: Store_state, Store_Remarks: Store_Remarks},
+                success: res => {
+                    if (res == "True") {
+                        //从父级关闭所有层
+                        parent.layer.closeAll();
+                        parent.layer.msg("修改成功");
+                        //调用父页面的分页确定按钮的点击事件
+                       parent.document.getElementsByClassName("layui-laypage-btn")[0].click();
+
+                    } else {
+                        layer.msg("数据未修改!");
+                    }
+                }
+            });
+            return false;
+        });
+    });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,470 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>网站后台管理模版</title>
+    <link rel="stylesheet" type="text/css" href="~/static/layui-v2.6.4/layui-v2.6.4/layui/css/layui.css" />
+    <style>
+        .layui-btn {
+            background-color: #1e9fff;
+        }
+
+        .layui-laypage .layui-laypage-curr .layui-laypage-em {
+            background-color: #1e9fff;
+        }
+
+        .layui-laydate .layui-this {
+            background-color: #1e9fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="layui-tab page-content-wrap">
+        <ul class="layui-tab-title">
+            <li class="layui-this" style="margin-left:10px;">津贴管理</li>
+            <li>津贴纪录</li>
+        </ul>
+
+        <div class="layui-tab-content">
+            @*津贴管理模块*@
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <input type="text" name="Cwa_Name" id="Cwa_Name" required lay-verify="required" placeholder="请输入商户名称" autocomplete="off" class="layui-input" style="margin-left:10px;width:200px;">
+                        </div>
+                        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="searche_btn" style="margin-top:-5px">搜索</button>
+                    </div>
+                </form>
+                <table class="layui-hide" id="test" lay-filter="test"></table>
+                <script type="text/html" id="toolbarDemo1">
+                    <a class="layui-btn layui-btn-sm" lay-event="add">添加考勤</a>
+                    <a class="layui-btn layui-btn-sm" lay-event="delBtn" id="delBtn" data-type="reload">批量删除</a>
+                    <a class="layui-btn layui-btn-sm" lay-event="shua" id="shua">刷新</a>
+                </script>
+                <script type="text/html" id="barDemo">
+                    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" style=" background-color: #FF5722;">删除</a>
+                </script>
+            </div>
+            @*津贴记录模块*@
+            <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item" style="margin-left:10px;">
+                        <div class="layui-inline">
+                            <input type="text" name="Cwa_Name" placeholder="请输入需要查询考勤名" autocomplete="off" class="layui-input Cwa_Name" style="margin-top: 10px; width:200px;position: absolute;">
+                            <input type="text" name="Staff_id" placeholder="请输入需要查询员工序号" autocomplete="off" class="layui-input Staff_id" style="margin-top: 10px; width:200px;margin-left: 225px;">
+                            <input type="text" name="CR_Frequency" placeholder="请输入需要查询考勤的次数" autocomplete="off" class="layui-input CR_Frequency" style="margin-top: 10px; width:200px;margin-left: 225px;">
+                            <input type="text" name="CR_date" id="CR_date1" autocomplete="off" placeholder="请输入需要查询的日期" class="layui-input" style="margin-top: -39px; width:200px;margin-left: 456px;">
+                        </div>
+                        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="searche_btnS" style="margin-top:5px;">搜索</button>
+                    </div>
+                </form>
+
+                <table class="layui-hide" id="Bounss" lay-filter="Bounss"></table>
+                <script type="text/html" id="toolbarDemo1">
+                    <a class="layui-btn layui-btn-sm" lay-event="add">添加纪录</a>
+                    <a class="layui-btn layui-btn-sm" lay-event="delBtn" id="delBtn" data-type="reload">批量删除</a>
+                    <a class="layui-btn layui-btn-sm shua" lay-event="shua">刷新</a>
+                </script>
+
+                <script type="text/html" id="barDemo">
+                    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" style=" background-color: #FF5722;">删除</a>
+                </script>
+            </div>
+
+        </div>
+    </div>
+    <script src="~/static/layui-v2.6.4/layui-v2.6.4/layui/layui.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+
+            layui.use(['table', 'form', 'jquery','layer','laydate'], function () {
+                var $ = layui.jquery;
+                var layer = layui.layer;
+                var table = layui.table;
+                var form = layui.form;
+                var laydate = layui.laydate;
+
+                laydate.render({
+                    elem: '#CR_date'
+
+
+                });
+                laydate.render({
+                    elem: '#CR_date1'
+                });
+                //考勤管理
+                //表格加载
+                table.render({
+                    elem: "#test",
+                    id: 'test',
+                    url: '/Cwa/CwaSet',
+                    method: 'get',
+
+                   toolbar: '#toolbarDemo1',
+                    title: '考勤设置表',
+
+                    totalRow: false//开启合计行
+                    , cols: [[
+                        { type: 'checkbox', fixed: 'left',},
+                        { field: 'Cwa_id', title: '考勤编号', width: 100, fixed: 'left',sort: true},
+                        { field: 'Cwa_Name', title: '考勤名称' },
+                        { field: 'Cwa_pirce', title: '考勤金额', sort: true  },
+                        , { fixed: 'right', title: '操作', toolbar: '#barDemo', width: 120 }
+                    ]]
+                       , page: true
+                });
+                //指定行 删除修改
+                table.on('tool(test)', function (obj) {
+                    console.log(obj);
+                    var layEvent = obj.event;//获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+                    if (layEvent === 'del') {
+                        var checkStatus = table.checkStatus('test'),
+                            //返回行的value
+                            data = checkStatus.data;
+                        if (data.length >1) {
+                            layer.msg('只能选择您需要删除的那一行喔亲！');
+                        }
+                        else {
+                            var id = obj.data.Cwa_id;
+                            layer.confirm('您删除后所有关于这条考勤名的考勤记录将会被全部删除，请谨慎删除，您确定删除这条考勤名参数吗？' + id, { icon: 1, title: '提示信息', anim: 6 }, function (index) {
+                                obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                                layer.close(index);
+                                //向服务器发送删除指令
+                                $.ajax({
+                                    url: "/Cwa/CwaSel",
+                                    data: {id:id},
+                                    type: "post",
+                                    success: function (res) {
+                                        if (res === 'true') {
+                                            layer.msg('删除成功！');
+                                        }
+                                    }
+                                });
+
+
+                            });
+                        }
+
+
+                    }
+                    else if (layEvent == 'edit') {
+                        var checkStatus = table.checkStatus('test'),
+                            //返回行的value
+                            data = checkStatus.data;
+                        if (data.length > 2) {
+
+                        }
+                        var id = obj.data.Cwa_id;
+                        layer.open({
+                            title: '编辑',
+                            type: 2,
+                            anim: 1,
+                            area: ['460px', '290px'],
+                            content: "/Cwa/EditCwa?id=" + id
+                        });
+                    }
+                });
+                //根据考勤表名称查询
+                form.on('submit(searche_btn)', function (data) {
+                    var Cwa_Name = $("#Cwa_Name").val();
+                    table.reload('test', {
+                        method: 'post',
+                        url: '/Cwa/CwaSelect',
+                        toolbar: '#toolbarDemo1',
+                        title: '考勤设置表',
+                        totalRow: false//开启合计行
+                        , cols: [[
+                            { type: 'checkbox', fixed: 'left', },
+                            { field: 'Cwa_id', title: '考勤编号', width: 100, fixed: 'left', sort: true },
+                            { field: 'Cwa_Name', title: '考勤名称' },
+                            { field: 'Cwa_pirce', title: '考勤金额', sort: true },
+                            , { fixed: 'right', title: '操作', toolbar: '#barDemo', width: 120 }
+                        ]]
+                        , page: {
+                            curr: 1// 重载后从第一页开始
+                        },
+                        where: {
+                            Cwa_Name: Cwa_Name
+                        }
+                    })
+                    return false;  // 阻止submit的表单提交
+                });
+                //添加 批量删除 刷新
+                table.on("toolbar(test)", function (obj) {
+                    switch (obj.event) {
+                        case "add":
+                            layer.open({
+                                title: '编辑',
+                                type: 2,
+                                anim: 2,
+                                area: ['460px', '270px'],
+                                content: "/Cwa/AddCwa"
+                            });
+                            break;
+                        case "delBtn":
+                            $('#delBtn').on('click', function () {
+                                //获得表格CheckBox已经选中的行的信息
+                                var checkStatus = table.checkStatus('test'),
+                                    //返回行的value
+                                    data = checkStatus.data;
+
+                                var arr = [];
+
+                                for (var i = 0; i < checkStatus.data.length; i++) {
+                                    arr.push(checkStatus.data[i].Cwa_id)
+                                }
+                                if (data.length > 0) {
+                                    layer.confirm('您删除后所有关于这些考勤序号的考勤名的考勤记录将会被全部删除，请谨慎考虑之后删除，确定删除这些考勤序号的考勤名称吗？' + arr, { icon: 3, title: '提示信息' }, function (index) {
+
+
+                                        $.ajax({
+                                            url: "/Cwa/Remove",
+                                            type: "post",
+                                            data: { Cwa_id: arr },
+                                            dataType: "Json",
+                                            success: function (data) {
+                                                console.log(data.state)
+                                                if (data.state == "10000") {
+                                                    layer.msg('删除成功！');
+                                                    location.reload();
+                                                }
+                                                else {
+                                                    layer.msg('删除失败！');
+                                                }
+
+
+                                            },
+                                            error: function () {
+                                                alert(arr);
+                                            }
+
+                                        })
+
+
+                                    });
+                                }
+                                else {
+                                    layer.msg('请选择需要删除的行！');
+                                }
+                            });
+                            break;
+                        case "shua":
+                            table.reload('test', {
+                                url: '/Cwa/CwaSet'
+                            });
+                            break;
+                    }
+                });
+
+
+
+
+
+                //考勤记录表
+                //表格加载
+                table.render({
+                    elem: "#Bounss",
+                    id: 'Bounss',
+                    url: '/CwaR/CwaRSet',
+                    method: 'get',
+                    toolbar: '#toolbarDemo1',
+                    title: '奖金设置表',
+
+                    totalRow: false//开启合计行
+                    , cols: [[
+                        { type: 'checkbox', fixed: 'left', },
+                        { field: 'CR_id', title: '考勤纪录编号', width: 120., fixed: 'left', sort: true },
+                        { field: 'Staff_id', title: '工号' },
+                        { field: 'Staff_Name', title: '员工', sort: true },
+                        { field: 'Cwa_Name', title: '考勤名称' },
+                        { field: 'CR_Frequency', title: '次数',sort: true},
+                        {
+                            field: 'CR_date', title: '日期',templet(row) {
+                                var CR_date = row.CR_date;
+                                CR_date = CR_date.substring(0, CR_date.indexOf('T'));
+                                return CR_date;
+                            }
+                        }
+                        ,{ fixed: 'right', title: '操作', toolbar: '#barDemo', width: 120 }
+                    ]]
+                    , page: true
+                });
+
+                //指定行 删除修改
+                table.on('tool(Bounss)', function (obj) {
+                    console.log(obj);
+                    var layEvent = obj.event;//获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+                    if (layEvent === 'del') {
+                        var checkStatus = table.checkStatus('Bounss'),
+                            //返回行的value
+                            data = checkStatus.data;
+                        if (data.length > 1) {
+                            layer.msg('只能选择您需要删除的那一行喔亲！');
+                        }
+                        else {
+                            var id = obj.data.CR_id;
+                            layer.confirm('您确定删除这条奖金纪录吗？' + id, { icon: 1, title: '提示信息', anim: 6 }, function (index) {
+                                obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+
+                                layer.close(index);
+                                //向服务器发送删除指令
+
+                                $.ajax({
+                                    url: "/CwaR/CwaRSel",
+                                    data: { id: id },
+                                    type: "post",
+                                    success: function (res) {
+                                        if (res === 'true') {
+                                            layer.msg('删除成功！');
+                                        }
+                                    }
+                                });
+
+
+                            });
+                        }
+                    }
+                    else if (layEvent == 'edit') {
+                        var checkStatus = table.checkStatus('Bounss'),
+                            //返回行的value
+                            data = checkStatus.data;
+                        if (data.length > 2) {
+                            layer.msg('只能选择您需要编辑的那一行喔亲！');
+                        }
+                        var id = obj.data.CR_id;
+                        layer.open({
+                            title: '编辑',
+                            type: 2,
+                            anim: 1,
+                            area: ['450px', '400px'],
+                            content: "/CwaR/EditCwaR?id="+id
+                        });
+                    }
+                });
+                //根据奖金表名称查询
+                form.on('submit(searche_btnS)', function (data) {
+
+                    var Cwa_Name = $(".Cwa_Name").val();
+                    var Staff_id = $(".Staff_id").val();
+                    var CR_date = $("#CR_date1").val();
+                    var CR_Frequency = $(".CR_Frequency").val();
+                    table.reload('Bounss', {
+                        method: 'post',
+                        url: '/CwaR/CwaSelectS',
+                        toolbar: '#toolbarDemo1',
+                        title: '奖金纪录表',
+                        totalRow: false//开启合计行
+                        , cols: [[
+                            { type: 'checkbox', fixed: 'left', },
+                            { field: 'CR_id', title: '考勤纪录编号', width: 120., fixed: 'left', sort: true },
+                            { field: 'Staff_id', title: '工号' },
+                            { field: 'Staff_Name', title: '员工', sort: true },
+                            { field: 'Cwa_Name', title: '考勤名称' },
+                            { field: 'CR_Frequency', title: '次数',sort: true },
+                            {
+                                field: 'CR_date',title: '日期',sort:true,templet(row) {
+                                    var CR_date = row.CR_date;
+                                    CR_date = CR_date.substring(0, CR_date.indexOf('T'));
+                                    return CR_date;
+                                }
+                            }
+                            , { fixed: 'right', title: '操作', toolbar: '#barDemo', width: 120 }
+                        ]]
+                        , page: {
+                            curr: 1// 重载后从第一页开始
+                        },
+                        where: {
+                            Cwa_Name:Cwa_Name,
+                            Staff_id:Staff_id,
+                            CR_Frequency:CR_Frequency,
+                            CR_date:CR_date
+                        }
+                    })
+                    return false;  // 阻止submit的表单提交
+                });
+                //添加 批量删除 刷新
+                table.on("toolbar(Bounss)",function (obj) {
+                    switch (obj.event) {
+                        case "add":
+                            layer.open({
+                                title: '编辑',
+                                type: 2,
+                                anim: 2,
+                                area: ['460px', '270px'],
+                                content:"/CwaR/AddCwaR"
+                            });
+                            break;
+                        case "delBtn":
+                                //获得表格CheckBox已经选中的行的信息
+                                var checkStatus = table.checkStatus('Bounss'),
+                                    //返回行的value
+                                    data = checkStatus.data;
+                                var arr = [];
+                            for (var i = 0; i < checkStatus.data.length; i++) {
+                                arr.push(checkStatus.data[i].CR_id)
+                                }
+                                if (data.length > 0) {
+                                    layer.confirm('您确定删除序号为'+arr+'这些纪录吗？', { icon: 3, title: '提示信息' }, function (index) {
+                                        $.ajax({
+                                            url: "/CwaR/RemoveS",
+                                            type: "post",
+                                            data: { id:arr },
+                                            dataType: "Json",
+                                            success: function (data) {
+                                                console.log(data.state)
+                                                if (data.state == "10000") {
+                                                    layer.msg('删除成功！');
+
+                                                    table.reload('Bounss', {
+                                                        url: '/BonuSR/BounsRSet'
+                                                    });
+                                                }
+                                                else {
+                                                    layer.msg('删除失败！');
+                                                }
+                                            },
+                                            error: function () {
+                                                layer.msg('删除失败！');
+                                            }
+
+                                        })
+
+
+                                    });
+                                }
+                                else {
+                                    layer.msg('请选择需要删除的行！');
+                                }
+
+                            break;
+
+                        case "shua":
+                            table.reload('Bounss',{
+                                url: '/CwaR/CwaRSet'
+                            });
+                            break;
+                    }
+                });
+
+            });
+
+
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

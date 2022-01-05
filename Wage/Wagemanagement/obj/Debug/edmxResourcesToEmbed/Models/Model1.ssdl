@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WagemanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bonus">
+    <Key>
+      <PropertyRef Name="Bonus_Id" />
+    </Key>
+    <Property Name="Bonus_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BonusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Bonus_pirce" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bonus_Records">
+    <Key>
+      <PropertyRef Name="BR_id" />
+    </Key>
+    <Property Name="BR_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Bonus_Id" Type="int" Nullable="false" />
+    <Property Name="CR_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cwa">
+    <Key>
+      <PropertyRef Name="Cwa_id" />
+    </Key>
+    <Property Name="Cwa_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cwa_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cwa_pirce" Type="decimal" Precision="18" Scale="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cwa_Records">
+    <Key>
+      <PropertyRef Name="CR_id" />
+    </Key>
+    <Property Name="CR_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Cwa_id" Type="int" Nullable="false" />
+    <Property Name="CR_Frequency" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CR_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Department_Id" />
+    </Key>
+    <Property Name="Department_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dt_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grade">
+    <Key>
+      <PropertyRef Name="Grade_Id" />
+    </Key>
+    <Property Name="Grade_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GradeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Grade_price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Role_id" />
+    </Key>
+    <Property Name="Role_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="Staff_id" />
+    </Key>
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Staff_Pwd" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Staff_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sraff_State" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role_id" Type="int" Nullable="false" />
+    <Property Name="Grade_Id" Type="int" Nullable="false" />
+    <Property Name="Department_Id" Type="int" Nullable="false" />
+    <Property Name="Staff_Sex" Type="int" Nullable="false" />
+    <Property Name="Staff_Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store_Id" Type="int" Nullable="false" />
+    <Property Name="Staff_Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_hiredate" Type="date" />
+    <Property Name="Staff_Remark" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="Store_Id" />
+    </Key>
+    <Property Name="Store_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Store_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store_Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StoreLeader" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store_state" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store_Remarks" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Subsidy">
+    <Key>
+      <PropertyRef Name="Subsidy_id" />
+    </Key>
+    <Property Name="Subsidy_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subsidy_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Subsidy_pirce" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Subsidy_Records">
+    <Key>
+      <PropertyRef Name="SR_Id" />
+    </Key>
+    <Property Name="SR_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Subsidy_id" Type="int" Nullable="false" />
+    <Property Name="SR_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Wages_Records">
+    <Key>
+      <PropertyRef Name="WR_id" />
+    </Key>
+    <Property Name="WR_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Grade_Id" Type="int" Nullable="false" />
+    <Property Name="Store_Id" Type="int" Nullable="false" />
+    <Property Name="SubsidyAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WR_Bonus" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Deduction" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WR_Pay" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Real_Wage" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WR_remarks" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Wagemanagement.dbo.Bonus_Rd_View”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Bonus_Rd_View">
+    <Key>
+      <PropertyRef Name="BR_id" />
+      <PropertyRef Name="Staff_id" />
+      <PropertyRef Name="BonusName" />
+      <PropertyRef Name="Staff_Name" />
+      <PropertyRef Name="CR_date" />
+    </Key>
+    <Property Name="BR_id" Type="int" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="BonusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CR_date" Type="date" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Wagemanagement.dbo.Cwa_Rd_View”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Cwa_Rd_View">
+    <Key>
+      <PropertyRef Name="CR_id" />
+      <PropertyRef Name="Staff_id" />
+      <PropertyRef Name="Staff_Name" />
+      <PropertyRef Name="Cwa_Name" />
+      <PropertyRef Name="CR_Frequency" />
+      <PropertyRef Name="CR_date" />
+    </Key>
+    <Property Name="CR_id" Type="int" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Staff_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cwa_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CR_Frequency" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CR_date" Type="date" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Wagemanagement.dbo.Staff_View”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Staff_View">
+    <Key>
+      <PropertyRef Name="Staff_id" />
+      <PropertyRef Name="Staff_Name" />
+      <PropertyRef Name="GradeName" />
+      <PropertyRef Name="Role_Name" />
+      <PropertyRef Name="Dt_Name" />
+      <PropertyRef Name="Store_Name" />
+      <PropertyRef Name="Staff_Address" />
+      <PropertyRef Name="Staff_Phone" />
+      <PropertyRef Name="Sraff_State" />
+      <PropertyRef Name="Staff_Sex" />
+      <PropertyRef Name="Staff_Email" />
+    </Key>
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Staff_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Dt_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sraff_State" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_Sex" Type="int" Nullable="false" />
+    <Property Name="Staff_Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Staff_hiredate" Type="date" />
+    <Property Name="Staff_Remark" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Wagemanagement.dbo.Subsidy_View”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Subsidy_View">
+    <Key>
+      <PropertyRef Name="SR_Id" />
+      <PropertyRef Name="Staff_id" />
+      <PropertyRef Name="Staff_Name" />
+      <PropertyRef Name="SR_date" />
+      <PropertyRef Name="Subsidy_Name" />
+    </Key>
+    <Property Name="SR_Id" Type="int" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Staff_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SR_date" Type="date" Nullable="false" />
+    <Property Name="Subsidy_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Wagemanagement.dbo.Wages_View”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Wages_View">
+    <Key>
+      <PropertyRef Name="WR_id" />
+      <PropertyRef Name="Staff_id" />
+      <PropertyRef Name="Staff_Name" />
+      <PropertyRef Name="Store_Name" />
+      <PropertyRef Name="GradeName" />
+      <PropertyRef Name="Grade_price" />
+    </Key>
+    <Property Name="WR_id" Type="int" Nullable="false" />
+    <Property Name="Staff_id" Type="int" Nullable="false" />
+    <Property Name="Staff_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Store_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Grade_price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SubsidyAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WR_Bonus" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Deduction" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WR_Pay" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Real_Wage" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WR_remarks" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="FK_Bonus_Bonus">
+    <End Role="Bonus" Type="Self.Bonus" Multiplicity="1" />
+    <End Role="Bonus1" Type="Self.Bonus" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Bonus">
+        <PropertyRef Name="Bonus_Id" />
+      </Principal>
+      <Dependent Role="Bonus1">
+        <PropertyRef Name="Bonus_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bonus_Records_Staff">
+    <End Role="Bonus" Type="Self.Bonus" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Bonus_Records" Type="Self.Bonus_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bonus">
+        <PropertyRef Name="Bonus_Id" />
+      </Principal>
+      <Dependent Role="Bonus_Records">
+        <PropertyRef Name="Bonus_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bonus_Records_Staff1">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Bonus_Records" Type="Self.Bonus_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="Staff_id" />
+      </Principal>
+      <Dependent Role="Bonus_Records">
+        <PropertyRef Name="Staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cwa_Records_Staff">
+    <End Role="Cwa" Type="Self.Cwa" Multiplicity="1" />
+    <End Role="Cwa_Records" Type="Self.Cwa_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cwa">
+        <PropertyRef Name="Cwa_id" />
+      </Principal>
+      <Dependent Role="Cwa_Records">
+        <PropertyRef Name="Cwa_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cwa_Records_Staff1">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Cwa_Records" Type="Self.Cwa_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="Staff_id" />
+      </Principal>
+      <Dependent Role="Cwa_Records">
+        <PropertyRef Name="Staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Role1" Type="Self.Role" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Role_id" />
+      </Principal>
+      <Dependent Role="Role1">
+        <PropertyRef Name="Role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Department">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Department_Id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Department_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Grade">
+    <End Role="Grade" Type="Self.Grade" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="Grade_Id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Grade_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Role_id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Store">
+    <End Role="Store" Type="Self.Store" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="Store_Id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Store_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subsidy_Records_Staff">
+    <End Role="Subsidy" Type="Self.Subsidy" Multiplicity="1" />
+    <End Role="Subsidy_Records" Type="Self.Subsidy_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subsidy">
+        <PropertyRef Name="Subsidy_id" />
+      </Principal>
+      <Dependent Role="Subsidy_Records">
+        <PropertyRef Name="Subsidy_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subsidy_Records_Staff1">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Subsidy_Records" Type="Self.Subsidy_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="Staff_id" />
+      </Principal>
+      <Dependent Role="Subsidy_Records">
+        <PropertyRef Name="Staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Wages_Records_Grade">
+    <End Role="Grade" Type="Self.Grade" Multiplicity="1" />
+    <End Role="Wages_Records" Type="Self.Wages_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grade">
+        <PropertyRef Name="Grade_Id" />
+      </Principal>
+      <Dependent Role="Wages_Records">
+        <PropertyRef Name="Grade_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Wages_Records_Staff">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Wages_Records" Type="Self.Wages_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="Staff_id" />
+      </Principal>
+      <Dependent Role="Wages_Records">
+        <PropertyRef Name="Staff_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Wages_Records_Store">
+    <End Role="Store" Type="Self.Store" Multiplicity="1" />
+    <End Role="Wages_Records" Type="Self.Wages_Records" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Store">
+        <PropertyRef Name="Store_Id" />
+      </Principal>
+      <Dependent Role="Wages_Records">
+        <PropertyRef Name="Store_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WagemanagementModelStoreContainer">
+    <EntitySet Name="Bonus" EntityType="Self.Bonus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bonus_Records" EntityType="Self.Bonus_Records" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cwa" EntityType="Self.Cwa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cwa_Records" EntityType="Self.Cwa_Records" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grade" EntityType="Self.Grade" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Store" EntityType="Self.Store" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subsidy" EntityType="Self.Subsidy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subsidy_Records" EntityType="Self.Subsidy_Records" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wages_Records" EntityType="Self.Wages_Records" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bonus_Rd_View" EntityType="Self.Bonus_Rd_View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Bonus_Rd_View].[BR_id] AS [BR_id], 
+    [Bonus_Rd_View].[Staff_id] AS [Staff_id], 
+    [Bonus_Rd_View].[BonusName] AS [BonusName], 
+    [Bonus_Rd_View].[Staff_Name] AS [Staff_Name], 
+    [Bonus_Rd_View].[CR_date] AS [CR_date]
+    FROM [dbo].[Bonus_Rd_View] AS [Bonus_Rd_View]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Cwa_Rd_View" EntityType="Self.Cwa_Rd_View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Cwa_Rd_View].[CR_id] AS [CR_id], 
+    [Cwa_Rd_View].[Staff_id] AS [Staff_id], 
+    [Cwa_Rd_View].[Staff_Name] AS [Staff_Name], 
+    [Cwa_Rd_View].[Cwa_Name] AS [Cwa_Name], 
+    [Cwa_Rd_View].[CR_Frequency] AS [CR_Frequency], 
+    [Cwa_Rd_View].[CR_date] AS [CR_date]
+    FROM [dbo].[Cwa_Rd_View] AS [Cwa_Rd_View]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Staff_View" EntityType="Self.Staff_View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Staff_View].[Staff_id] AS [Staff_id], 
+    [Staff_View].[Staff_Name] AS [Staff_Name], 
+    [Staff_View].[GradeName] AS [GradeName], 
+    [Staff_View].[Role_Name] AS [Role_Name], 
+    [Staff_View].[Dt_Name] AS [Dt_Name], 
+    [Staff_View].[Store_Name] AS [Store_Name], 
+    [Staff_View].[Staff_Address] AS [Staff_Address], 
+    [Staff_View].[Staff_Phone] AS [Staff_Phone], 
+    [Staff_View].[Sraff_State] AS [Sraff_State], 
+    [Staff_View].[Staff_Sex] AS [Staff_Sex], 
+    [Staff_View].[Staff_Email] AS [Staff_Email], 
+    [Staff_View].[Staff_hiredate] AS [Staff_hiredate], 
+    [Staff_View].[Staff_Remark] AS [Staff_Remark]
+    FROM [dbo].[Staff_View] AS [Staff_View]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Subsidy_View" EntityType="Self.Subsidy_View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Subsidy_View].[SR_Id] AS [SR_Id], 
+    [Subsidy_View].[Staff_id] AS [Staff_id], 
+    [Subsidy_View].[Staff_Name] AS [Staff_Name], 
+    [Subsidy_View].[SR_date] AS [SR_date], 
+    [Subsidy_View].[Subsidy_Name] AS [Subsidy_Name]
+    FROM [dbo].[Subsidy_View] AS [Subsidy_View]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Wages_View" EntityType="Self.Wages_View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Wages_View].[WR_id] AS [WR_id], 
+    [Wages_View].[Staff_id] AS [Staff_id], 
+    [Wages_View].[Staff_Name] AS [Staff_Name], 
+    [Wages_View].[Store_Name] AS [Store_Name], 
+    [Wages_View].[GradeName] AS [GradeName], 
+    [Wages_View].[Grade_price] AS [Grade_price], 
+    [Wages_View].[SubsidyAmount] AS [SubsidyAmount], 
+    [Wages_View].[WR_Bonus] AS [WR_Bonus], 
+    [Wages_View].[Deduction] AS [Deduction], 
+    [Wages_View].[WR_Pay] AS [WR_Pay], 
+    [Wages_View].[Real_Wage] AS [Real_Wage], 
+    [Wages_View].[WR_remarks] AS [WR_remarks]
+    FROM [dbo].[Wages_View] AS [Wages_View]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Bonus_Bonus" Association="Self.FK_Bonus_Bonus">
+      <End Role="Bonus" EntitySet="Bonus" />
+      <End Role="Bonus1" EntitySet="Bonus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bonus_Records_Staff" Association="Self.FK_Bonus_Records_Staff">
+      <End Role="Bonus" EntitySet="Bonus" />
+      <End Role="Bonus_Records" EntitySet="Bonus_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bonus_Records_Staff1" Association="Self.FK_Bonus_Records_Staff1">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Bonus_Records" EntitySet="Bonus_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cwa_Records_Staff" Association="Self.FK_Cwa_Records_Staff">
+      <End Role="Cwa" EntitySet="Cwa" />
+      <End Role="Cwa_Records" EntitySet="Cwa_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cwa_Records_Staff1" Association="Self.FK_Cwa_Records_Staff1">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Cwa_Records" EntitySet="Cwa_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_Role" Association="Self.FK_Role_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Role1" EntitySet="Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Department" Association="Self.FK_Staff_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Grade" Association="Self.FK_Staff_Grade">
+      <End Role="Grade" EntitySet="Grade" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Role" Association="Self.FK_Staff_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Store" Association="Self.FK_Staff_Store">
+      <End Role="Store" EntitySet="Store" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subsidy_Records_Staff" Association="Self.FK_Subsidy_Records_Staff">
+      <End Role="Subsidy" EntitySet="Subsidy" />
+      <End Role="Subsidy_Records" EntitySet="Subsidy_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subsidy_Records_Staff1" Association="Self.FK_Subsidy_Records_Staff1">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Subsidy_Records" EntitySet="Subsidy_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Wages_Records_Grade" Association="Self.FK_Wages_Records_Grade">
+      <End Role="Grade" EntitySet="Grade" />
+      <End Role="Wages_Records" EntitySet="Wages_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Wages_Records_Staff" Association="Self.FK_Wages_Records_Staff">
+      <End Role="Staff" EntitySet="Staff" />
+      <End Role="Wages_Records" EntitySet="Wages_Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Wages_Records_Store" Association="Self.FK_Wages_Records_Store">
+      <End Role="Store" EntitySet="Store" />
+      <End Role="Wages_Records" EntitySet="Wages_Records" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

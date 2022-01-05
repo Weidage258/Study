@@ -1,0 +1,185 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+@{
+    Layout = null;
+}
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>网站后台管理模版</title>
+    <link rel="stylesheet" type="text/css" href="~/static/layui-v2.6.4/layui-v2.6.4/layui/css/layui.css" />
+    <style>
+        .layui-btn {
+            background-color: #1e9fff;
+        }
+
+        .layui-laypage .layui-laypage-curr .layui-laypage-em {
+            background-color: #1e9fff;
+        }
+
+        .layui-laydate .layui-this {
+            background-color: #1e9fff;
+        }
+    </style>
+</head>
+<body>
+
+    @*等级管理模块*@
+    <div class="layui-tab-item layui-show">
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <input type="text" name="GradeName" id="GradeName" required lay-verify="required" placeholder="请输入等级名称" autocomplete="off" class="layui-input" style="margin-left:10px;width:200px;">
+                </div>
+                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="searche_btn" style="margin-top:-5px">搜索</button>
+            </div>
+        </form>
+        <table class="layui-hide" id="test" lay-filter="test"></table>
+        <script type="text/html" id="toolbarDemo1">
+            <a class="layui-btn layui-btn-sm" lay-event="add">添加等级名</a>
+            <a class="layui-btn layui-btn-sm" lay-event="shua" id="shua">刷新</a>
+        </script>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del" style=" background-color: #FF5722;">删除</a>
+        </script>
+    </div>
+    <script src="~/static/layui-v2.6.4/layui-v2.6.4/layui/layui.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+            layui.use(['table', 'form', 'jquery','layer','laydate'], function () {
+                var $ = layui.jquery;
+                var layer = layui.layer;
+                var table = layui.table;
+                var form = layui.form;
+                var laydate = layui.laydate;
+                laydate.render({
+                    elem: '#CR_date'
+                });
+                laydate.render({
+                    elem: '#CR_date1'
+                });
+                //等级管理
+                //表格加载
+                table.render({
+                    elem: "#test",
+                    id: 'test',
+                    url: '/Grade/GradeSet',
+                    method: 'get',
+
+                   toolbar: '#toolbarDemo1',
+                    title: '考勤设置表',
+
+                    totalRow: false//开启合计行
+                    , cols: [[
+                        { field: 'Grade_Id', title: '等级编号',width: 100, fixed: 'left',sort:true},
+                        { field: 'GradeName', title: '等级名称'},
+                         { field: 'Grade_price', title: "月基本工资",sort:true}
+                        , { fixed: 'right', title: '操作', toolbar: '#barDemo', width: 120 }
+                    ]]
+                    ,page: true
+                });
+                //指定行 删除修改
+                table.on('tool(test)', function (obj) {
+                    console.log(obj);
+                    var layEvent = obj.event;//获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+                    if (layEvent === 'del'){
+                        var id = obj.data.Grade_Id;
+                            layer.confirm('您删除后所有关于这等级的成员会全部删除，请谨慎删除，您确定删除这条等级名参数吗？' + id, { icon: 1, title: '提示信息', anim: 6 }, function (index) {
+                                obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                                layer.close(index);
+                                //向服务器发送删除指令
+                                $.ajax({
+                                    url: "/Grade/GradeSel",
+                                    data: {id:id},
+                                    type: "post",
+                                    success: function (res) {
+                                        if (res === 'true') {-
+                                            layer.msg('删除成功！');
+                                        }
+                                    }
+                                });
+                            });
+                    }
+                    else if (layEvent == 'edit') {
+                        var id = obj.data.Grade_Id;
+                        layer.open({
+                            title: '编辑',
+                            type: 2,
+                            anim: 1,
+                            area: ['460px', '290px'],
+                            content: "/Grade/EditGrade?id=" + id
+                        });
+                    }
+                });
+                //根据考勤表名称查询
+                form.on('submit(searche_btn)', function (data) {
+                    var GradeName = $("#GradeName").val();
+                    table.reload('test', {
+                        method: 'post',
+                        url: '/Grade/GradeSelect',
+                        toolbar: '#toolbarDemo1',
+                        title: '等级设置表',
+                        totalRow: false//开启合计行
+                        , cols: [[
+                            { field: 'Grade_Id', title: '等级编号', width: 100, fixed: 'left', sort: true },
+                            { field: 'GradeName', title: '等级名称' },
+                            { field: 'Grade_price', title: "月基本工资", sort: true }
+                            , { fixed: 'right', title: '操作', toolbar: '#barDemo', width: 120 }
+                        ]],
+                        page: {
+                            curr: 1// 重载后从第一页开始
+                        },
+                        where: {
+                            GradeName: GradeName
+                        }
+                    })
+                    return false;  // 阻止submit的表单提交
+                });
+                //添加 批量删除 刷新
+                table.on("toolbar(test)", function (obj) {
+                    switch (obj.event) {
+                        case "add":
+                            layer.open({
+                                title: '编辑',
+                                type: 2,
+                                anim: 2,
+                                area: ['460px', '270px'],
+                                content: "/Grade/AddGrade"
+                            });
+                            break;
+                        case "shua":
+
+
+                            table.reload('test', {
+                                url: '/Grade/GradeSet'
+                            });
+                            break;
+                    }
+                });
+            });
+
+
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>
+

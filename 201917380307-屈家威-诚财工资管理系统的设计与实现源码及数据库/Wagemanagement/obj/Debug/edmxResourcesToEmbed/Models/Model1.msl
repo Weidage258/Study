@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WagemanagementModelStoreContainer" CdmEntityContainer="WagemanagementEntities">
+    <EntitySetMapping Name="Bonus">
+      <EntityTypeMapping TypeName="WagemanagementModel.Bonus">
+        <MappingFragment StoreEntitySet="Bonus">
+          <ScalarProperty Name="Bonus_Id" ColumnName="Bonus_Id" />
+          <ScalarProperty Name="BonusName" ColumnName="BonusName" />
+          <ScalarProperty Name="Bonus_pirce" ColumnName="Bonus_pirce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bonus_Records">
+      <EntityTypeMapping TypeName="WagemanagementModel.Bonus_Records">
+        <MappingFragment StoreEntitySet="Bonus_Records">
+          <ScalarProperty Name="BR_id" ColumnName="BR_id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Bonus_Id" ColumnName="Bonus_Id" />
+          <ScalarProperty Name="CR_date" ColumnName="CR_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cwa">
+      <EntityTypeMapping TypeName="WagemanagementModel.Cwa">
+        <MappingFragment StoreEntitySet="Cwa">
+          <ScalarProperty Name="Cwa_id" ColumnName="Cwa_id" />
+          <ScalarProperty Name="Cwa_Name" ColumnName="Cwa_Name" />
+          <ScalarProperty Name="Cwa_pirce" ColumnName="Cwa_pirce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cwa_Records">
+      <EntityTypeMapping TypeName="WagemanagementModel.Cwa_Records">
+        <MappingFragment StoreEntitySet="Cwa_Records">
+          <ScalarProperty Name="CR_id" ColumnName="CR_id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Cwa_id" ColumnName="Cwa_id" />
+          <ScalarProperty Name="CR_Frequency" ColumnName="CR_Frequency" />
+          <ScalarProperty Name="CR_date" ColumnName="CR_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="WagemanagementModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+          <ScalarProperty Name="Dt_Name" ColumnName="Dt_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grade">
+      <EntityTypeMapping TypeName="WagemanagementModel.Grade">
+        <MappingFragment StoreEntitySet="Grade">
+          <ScalarProperty Name="Grade_Id" ColumnName="Grade_Id" />
+          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+          <ScalarProperty Name="Grade_price" ColumnName="Grade_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="WagemanagementModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staff">
+      <EntityTypeMapping TypeName="WagemanagementModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Staff_Pwd" ColumnName="Staff_Pwd" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="Sraff_State" ColumnName="Sraff_State" />
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+          <ScalarProperty Name="Grade_Id" ColumnName="Grade_Id" />
+          <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+          <ScalarProperty Name="Staff_Sex" ColumnName="Staff_Sex" />
+          <ScalarProperty Name="Staff_Address" ColumnName="Staff_Address" />
+          <ScalarProperty Name="Staff_Phone" ColumnName="Staff_Phone" />
+          <ScalarProperty Name="Store_Id" ColumnName="Store_Id" />
+          <ScalarProperty Name="Staff_Email" ColumnName="Staff_Email" />
+          <ScalarProperty Name="Staff_hiredate" ColumnName="Staff_hiredate" />
+          <ScalarProperty Name="Staff_Remark" ColumnName="Staff_Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Store">
+      <EntityTypeMapping TypeName="WagemanagementModel.Store">
+        <MappingFragment StoreEntitySet="Store">
+          <ScalarProperty Name="Store_Id" ColumnName="Store_Id" />
+          <ScalarProperty Name="Store_Name" ColumnName="Store_Name" />
+          <ScalarProperty Name="Store_Address" ColumnName="Store_Address" />
+          <ScalarProperty Name="StoreLeader" ColumnName="StoreLeader" />
+          <ScalarProperty Name="Store_state" ColumnName="Store_state" />
+          <ScalarProperty Name="Store_Remarks" ColumnName="Store_Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subsidy">
+      <EntityTypeMapping TypeName="WagemanagementModel.Subsidy">
+        <MappingFragment StoreEntitySet="Subsidy">
+          <ScalarProperty Name="Subsidy_id" ColumnName="Subsidy_id" />
+          <ScalarProperty Name="Subsidy_Name" ColumnName="Subsidy_Name" />
+          <ScalarProperty Name="Subsidy_pirce" ColumnName="Subsidy_pirce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subsidy_Records">
+      <EntityTypeMapping TypeName="WagemanagementModel.Subsidy_Records">
+        <MappingFragment StoreEntitySet="Subsidy_Records">
+          <ScalarProperty Name="SR_Id" ColumnName="SR_Id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Subsidy_id" ColumnName="Subsidy_id" />
+          <ScalarProperty Name="SR_date" ColumnName="SR_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wages_Records">
+      <EntityTypeMapping TypeName="WagemanagementModel.Wages_Records">
+        <MappingFragment StoreEntitySet="Wages_Records">
+          <ScalarProperty Name="WR_id" ColumnName="WR_id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Grade_Id" ColumnName="Grade_Id" />
+          <ScalarProperty Name="Store_Id" ColumnName="Store_Id" />
+          <ScalarProperty Name="SubsidyAmount" ColumnName="SubsidyAmount" />
+          <ScalarProperty Name="WR_Bonus" ColumnName="WR_Bonus" />
+          <ScalarProperty Name="Deduction" ColumnName="Deduction" />
+          <ScalarProperty Name="WR_Pay" ColumnName="WR_Pay" />
+          <ScalarProperty Name="Real_Wage" ColumnName="Real_Wage" />
+          <ScalarProperty Name="WR_remarks" ColumnName="WR_remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bonus_Rd_View">
+      <EntityTypeMapping TypeName="WagemanagementModel.Bonus_Rd_View">
+        <MappingFragment StoreEntitySet="Bonus_Rd_View">
+          <ScalarProperty Name="BR_id" ColumnName="BR_id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="BonusName" ColumnName="BonusName" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="CR_date" ColumnName="CR_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cwa_Rd_View">
+      <EntityTypeMapping TypeName="WagemanagementModel.Cwa_Rd_View">
+        <MappingFragment StoreEntitySet="Cwa_Rd_View">
+          <ScalarProperty Name="CR_id" ColumnName="CR_id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="Cwa_Name" ColumnName="Cwa_Name" />
+          <ScalarProperty Name="CR_Frequency" ColumnName="CR_Frequency" />
+          <ScalarProperty Name="CR_date" ColumnName="CR_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staff_View">
+      <EntityTypeMapping TypeName="WagemanagementModel.Staff_View">
+        <MappingFragment StoreEntitySet="Staff_View">
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="Dt_Name" ColumnName="Dt_Name" />
+          <ScalarProperty Name="Store_Name" ColumnName="Store_Name" />
+          <ScalarProperty Name="Staff_Address" ColumnName="Staff_Address" />
+          <ScalarProperty Name="Staff_Phone" ColumnName="Staff_Phone" />
+          <ScalarProperty Name="Sraff_State" ColumnName="Sraff_State" />
+          <ScalarProperty Name="Staff_Sex" ColumnName="Staff_Sex" />
+          <ScalarProperty Name="Staff_Email" ColumnName="Staff_Email" />
+          <ScalarProperty Name="Staff_hiredate" ColumnName="Staff_hiredate" />
+          <ScalarProperty Name="Staff_Remark" ColumnName="Staff_Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subsidy_View">
+      <EntityTypeMapping TypeName="WagemanagementModel.Subsidy_View">
+        <MappingFragment StoreEntitySet="Subsidy_View">
+          <ScalarProperty Name="SR_Id" ColumnName="SR_Id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="SR_date" ColumnName="SR_date" />
+          <ScalarProperty Name="Subsidy_Name" ColumnName="Subsidy_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wages_View">
+      <EntityTypeMapping TypeName="WagemanagementModel.Wages_View">
+        <MappingFragment StoreEntitySet="Wages_View">
+          <ScalarProperty Name="WR_id" ColumnName="WR_id" />
+          <ScalarProperty Name="Staff_id" ColumnName="Staff_id" />
+          <ScalarProperty Name="Staff_Name" ColumnName="Staff_Name" />
+          <ScalarProperty Name="Store_Name" ColumnName="Store_Name" />
+          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+          <ScalarProperty Name="Grade_price" ColumnName="Grade_price" />
+          <ScalarProperty Name="SubsidyAmount" ColumnName="SubsidyAmount" />
+          <ScalarProperty Name="WR_Bonus" ColumnName="WR_Bonus" />
+          <ScalarProperty Name="Deduction" ColumnName="Deduction" />
+          <ScalarProperty Name="WR_Pay" ColumnName="WR_Pay" />
+          <ScalarProperty Name="Real_Wage" ColumnName="Real_Wage" />
+          <ScalarProperty Name="WR_remarks" ColumnName="WR_remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
