@@ -1,0 +1,132 @@
+﻿@{
+    var user = Session["Login"] as AutoExamDB.Models.Account;
+
+    var adminMenus = Session["Menus"] as List<AutoExamDB.Models.Menus>;
+
+    var userMenus = Session["Menus"] as List<AutoExamDB.Models.AccountMenus>;
+
+
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 在线考试系统</title>
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/ionicons.css" rel="stylesheet" />
+    @RenderSection("css", required: false)
+</head>
+<body>
+    <div class="navbar navbar-bancgroup">
+        <div class="container">
+            <div class="navbar-header">
+                <img class="logo" src="~/imgs/login.png" alt="Alternate Text" />
+            </div>
+            <div class="navbar-right">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <i class="icon ion-ios-contact-outline nav-link icon-nav-text"></i>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle icon-nav-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">@user.LoginName</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/MyCenter/Index">个人中心</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/Home/LoginOut">退出</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-bottom-line"></div>
+    <div class="row section">
+        <div class="col-md-2">
+            <div class="left-side-menu">
+                <ul class="ul-container">
+                    @if (user.LoginName == "admin")
+                    {
+                        foreach (var item1 in adminMenus)
+                        {
+                            if (item1.Pid == 0)
+                            {
+                                <li class="li-sidebar-item">
+                                    <a href="@item1.Url/@item1.MenuID">
+                                        <i class="icon icon-left"></i> @*ion-android-settings*@
+                                        <span>@item1.Name</span>
+                                        <i class="icon icon-right ion-android-arrow-dropright"></i>
+                                    </a>
+                                    <ul>
+                                        @foreach (var item2 in adminMenus)
+                                        {
+                                            if (item2.Pid == item1.MenuID)
+                                            {
+                                                <li><a href="@item2.Url"><span>@item2.Name</span></a></li>
+                                            }
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (var item1 in userMenus)
+                        {
+                            if (item1.MenuPid == 0)
+                            {
+                                <li class="li-sidebar-item">
+                                    <a href="@item1.MenuUrl/@item1.MenuID">
+                                        <i class="icon icon-left"></i> @*ion-android-settings*@
+                                        <span>@item1.MenuName</span>
+                                        <i class="icon icon-right ion-android-arrow-dropright"></i>
+                                    </a>
+                                    <ul>
+                                        @foreach (var item2 in userMenus)
+                                        {
+                                            if (item2.MenuPid == item1.MenuID)
+                                            {
+                                                <li><a href="@item2.MenuUrl"><span>@item2.MenuName</span></a></li>
+                                            }
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    }
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-md-10" id="RenderBody">
+            @RenderBody()
+        </div>
+    </div>
+    <hr />
+    <footer>
+        <p class="text-center">&copy; @DateTime.Now.Year - 在线考试系统</p>
+        <p class="text-center">地址：</p>
+        <p class="text-center">电话：</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $(".li-sidebar-item > a").click(function () {
+            $(this).children(".icon-right").toggleClass("ion-android-arrow-dropright");
+            $(this).children(".icon-right").toggleClass("ion-android-arrow-dropdown");
+            $(this).next("ul").slideToggle();//如果二级ul是隐藏的则显示该元素，否则隐藏
+
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
+

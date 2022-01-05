@@ -1,0 +1,128 @@
+﻿@model AutoExamDB.Models.Account
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录系统</title>
+    <link href="~/Content/Login.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="login_body l_clear">
+            <div class="login_form l_float">
+                <div class="login_top">
+                    <img src="~/imgs/icons/box-arrow-in-right.svg" alt="" class="">
+                </div>
+                <div class="login_con">
+
+                    @using (Html.BeginForm("Login","Home",FormMethod.Post))
+                    {
+                        <div>
+                            <label for="user_name">用户名</label>
+                            @Html.TextBoxFor(model => model.LoginName, new { placeholder = "账号/手机号/邮箱" })
+                            <img src="~/imgs/icons/people-fill.svg">
+                            <p id="uname" class="tips"></p>
+                        </div>
+                        <div>
+                            <label for="user_pwd">密码</label>
+                            @Html.PasswordFor(model => model.LoginPWD, new { placeholder = "请输入账户密码" })
+                            <img src="~/imgs/icons/lock-fill.svg">
+                            <p id="upwd" class="tips"></p>
+                        </div>
+                        <div class="b_clear">
+                            <label for="auth_code" class="b_clear">验证码</label>
+                            @Html.TextBoxFor(model => model.Remark, new { id = "auth_code", @class = "l_float" })
+                            <button class="auth_code l_float"><img id="img" src="~/Handlers/ValidCodeHandler.ashx?id=1" onclick="this.src = this.src + 1" alt="Alternate Text" /></button>
+                            <img src="~/imgs/icons/info-circle-fill.svg">
+                            <p id="ucode" class="tips"></p>
+
+                        </div>
+                        <div class="b_clear submit">
+                            <button type="submit">登&nbsp;&nbsp;录</button>
+                            @*<a href="#" class="r_float">忘记密码？</a>*@
+                            <p id="ServerValid" class="tips">@Html.ValidationMessageFor(model=>model.Remark)</p>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="login_ad l_float" id="AdImg">
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/crypto-js/core.js"></script>
+    <script src="~/Scripts/crypto-js/sha1.js"></script>
+    <script>
+        var $IsSubmit = true;
+        $(function () {
+            $("form").bind("submit", CheckForm);//处理form表单的提交事件
+            $("#LoginName").bind({ "blur": CheckLoginName, "focus": Reset });//检查账户的input框
+            $("#LoginPWD").bind("blur", CheckLoginPWD);//检查密码的input框
+            $("#auth_code").bind("blur", CheckLoginValidCode);//检查验证码的input框
+
+        });
+        function Reset() {
+            
+        }
+        function CheckForm() {
+            //只有当三个input框都不为空才提交表单
+            if ($IsSubmit) {  
+                var $result = $("#LoginPWD").val();
+                $("#LoginPWD").val(CryptoJS.SHA1($result).toString(CryptoJS.enc.Hex));
+                return true;
+            }
+            return false;
+        }
+        function CheckLoginName() {
+            var $result = $("#LoginName").val();           
+            if ($result == "") {//非空
+                $("#uname").html("用户名不能为空");
+                $IsSubmit =  false;
+            }
+            else {
+                $("#uname").html("")
+            }
+        }
+        function CheckLoginPWD() {
+            var $result = $("#LoginPWD").val();
+            if ($result == "")//非空
+            {
+                $("#upwd").html("密码不能为空")
+                $IsSubmit = false;
+            }
+            else {
+                $("#upwd").html("")
+            }   
+            
+        }
+        function CheckLoginValidCode() {
+            //纯数字 
+            var $nameReg = /^\d*$/; 
+            //非空
+            var $result = $("#auth_code").val();
+            if ($result == "") {
+                $("#ucode").html("验证码不能为空")
+                $IsSubmit =  false;
+            }
+            else if (!$nameReg.test($result))//不符合账户规则
+            {
+                $("#ucode").html("验证码只能是纯数字");
+                $IsSubmit =  false;
+            }
+            else {
+                $("#ucode").html("")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

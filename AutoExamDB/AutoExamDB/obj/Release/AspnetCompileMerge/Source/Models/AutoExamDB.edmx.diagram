@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ac8ae929f7314d518acfc6118bec29bd" Name="Diagram1">
+        <EntityTypeShape EntityType="AutoExamDBModel.Account" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.AccountRoles" Width="1.5" PointX="2.375" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.ClassInfo" Width="1.5" PointX="4.125" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.Exam" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.ExamInfo" Width="1.5" PointX="10.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.Menus" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.Paper" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.PaperInfo" Width="1.5" PointX="10.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.RoleMenus" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.Roles" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.StuInfo" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.TeaInfo" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoExamDBModel.Topic" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="AutoExamDBModel.FK__AccountRo__Accou__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__StuInfo__Account__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__TeaInfo__Account__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__AccountRo__RoleI__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__StuInfo__ClassIn__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__TeaInfo__ClassIn__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__Exam__PaperID__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__Exam__StuInfoID__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__Exam__TeaInfoID__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__ExamInfo__ExamID__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__ExamInfo__TopicI__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__RoleMenus__MenuI__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__PaperInfo__Paper__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__PaperInfo__Topic__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="AutoExamDBModel.FK__RoleMenus__RoleI__4F7CD00D" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AutoExamDBModel.AccountMenus" Width="1.5" PointX="11.375" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

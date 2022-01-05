@@ -1,0 +1,204 @@
+﻿@model List<AutoExamDB.Models.ClassInfo>
+@{
+    ViewBag.Title = "班级管理";
+}
+
+<h2>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#classAddModal" data-whatever="0">
+        新增
+    </button>
+</h2>
+
+<table class="table table-hover table-striped table-bordered">
+    <thead class="table table-dark">
+        <tr>
+            <td>班级名字</td>
+            <td>年级</td>
+            <td>专业</td>
+            <td>备注</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model)
+        {
+            <tr>
+                <td>@item.Class</td>
+                <td>@item.Grade</td>
+                <td>@item.Major</td>
+                <td>@item.Remark</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#classEditModal" data-whatever="@item.ClassInfoID">
+                        修改
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#classDeleModalCenter" data-whatever="@item.ClassInfoID">
+                        删除
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- 删除提示模态框 -->
+<div class="modal fade" id="classDeleModalCenter" tabindex="-1" role="dialog" aria-labelledby="classDeleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">删除班级</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                确定要删除吗？
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" value="" id="deleSubmit">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 新增提示模态框 -->
+<div class="modal fade" id="classAddModal" tabindex="-1" role="dialog" aria-labelledby="classAddModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">新增班级信息</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="addSubmitForm" action="/ClassInfo/Add" method="post">
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">班级名字：</label>
+                        <input type="text" class="form-control col-8" name="Class">
+                    </div>
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">年级：</label>
+                        <input type="text" class="form-control col-8" name="Grade">
+                    </div>
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">专业：</label>
+                        <input type="text" class="form-control col-8" name="Major">
+                    </div>
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">备注：</label>
+                        <input type="text" class="form-control col-8" name="Remark">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="addSubmit" data-dismiss="modal">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改提示模态框 -->
+<div class="modal fade" id="classEditModal" tabindex="-1" role="dialog" aria-labelledby="classEditModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">修改班级信息</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editSubmitForm" action="/ClassInfo/Edit" method="post">
+                    <input type="hidden" name="ClassInfoID" value="" />
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">班级名字：</label>
+                        <input type="text" class="form-control col-8" name="Class">
+                    </div>
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">年级：</label>
+                        <input type="text" class="form-control col-8" name="Grade">
+                    </div>
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">专业：</label>
+                        <input type="text" class="form-control col-8" name="Major">
+                    </div>
+                    <div class="form-group row">
+                        <label for="recipient-name" class="col-form-label col-3 text-right">备注：</label>
+                        <input type="text" class="form-control col-8" name="Remark">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="editSubmit" data-dismiss="modal">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+        //$("#classDeleModalCenter").modal();
+        //删除班级
+        $("#deleSubmit").click(function () {
+            $.ajax({
+                url: "/ClassInfo/Dele",
+                data: { id: $(this).val() },
+                type: "post",
+                //dataType: "json", 
+                success: function () {
+                    window.location.reload()//刷新当前页面.
+                },
+            });
+        });
+        //删除班级ID绑定
+        $('#classDeleModalCenter').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            console.log(recipient)
+            $("#deleSubmit").val(recipient)
+        });
+        //新增提交表单
+        $("#addSubmit").click(function () {
+            $("#addSubmitForm").submit();
+        });
+        //修改提交表单
+        $("#editSubmit").click(function () {
+            $("#editSubmitForm").submit();
+        });
+        //修改班级信息数据获取
+        $('#classEditModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            var modal = $(this)
+            $.ajax({
+                url: "/ClassInfo/Index",
+                data: { id: recipient },
+                type: "post",                
+                //contentType:"application/json",
+                dataType: "json",                
+                success: function (recv) {
+                    console.log(recv["ClassInfoID"])                    
+                    //modal.find('.modal-title').text('New message to ' + recipient)
+                    modal.find('.modal-body input[name="ClassInfoID"]').val(recv["ClassInfoID"])
+                    modal.find('.modal-body input[name="Class"]').val(recv["Class"])
+                    modal.find('.modal-body input[name="Grade"]').val(recv["Grade"])
+                    modal.find('.modal-body input[name="Major"]').val(recv["Major"])
+                    modal.find('.modal-body input[name="Remark"]').val(recv["Remark"])
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            });
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            //var modal = $(this)
+            //modal.find('.modal-title').text('New message to ' + recipient)
+            //modal.find('.modal-body input[name="Class"]').val(recipient)
+        })
+    </script>
+    
+    }

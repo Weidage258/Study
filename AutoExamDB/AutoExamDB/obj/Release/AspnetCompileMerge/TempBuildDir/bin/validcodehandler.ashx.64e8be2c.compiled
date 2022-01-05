@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Handlers/ValidCodeHandler.ashx" hash="ffffffffb1ac842a" filehash="ffffe9d253f2f23a" flags="130000" assembly="AutoExamDB" type="AutoExamDB.Handlers.ValidCodeHandler">
+    <filedeps>
+        <filedep name="/Handlers/ValidCodeHandler.ashx" />
+    </filedeps>
+</preserve>

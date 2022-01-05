@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutoExamDBModelStoreContainer" CdmEntityContainer="AutoExamDBEntities">
+    <EntitySetMapping Name="Account">
+      <EntityTypeMapping TypeName="AutoExamDBModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="LoginPWD" ColumnName="LoginPWD" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountRoles">
+      <EntityTypeMapping TypeName="AutoExamDBModel.AccountRoles">
+        <MappingFragment StoreEntitySet="AccountRoles">
+          <ScalarProperty Name="UserRolesID" ColumnName="UserRolesID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassInfo">
+      <EntityTypeMapping TypeName="AutoExamDBModel.ClassInfo">
+        <MappingFragment StoreEntitySet="ClassInfo">
+          <ScalarProperty Name="ClassInfoID" ColumnName="ClassInfoID" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Major" ColumnName="Major" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseInfo">
+      <EntityTypeMapping TypeName="AutoExamDBModel.CourseInfo">
+        <MappingFragment StoreEntitySet="CourseInfo">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseChapter" ColumnName="CourseChapter" />
+          <ScalarProperty Name="CourseCategory" ColumnName="CourseCategory" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EduType">
+      <EntityTypeMapping TypeName="AutoExamDBModel.EduType">
+        <MappingFragment StoreEntitySet="EduType">
+          <ScalarProperty Name="EduTypeID" ColumnName="EduTypeID" />
+          <ScalarProperty Name="EduTypeName" ColumnName="EduTypeName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exam">
+      <EntityTypeMapping TypeName="AutoExamDBModel.Exam">
+        <MappingFragment StoreEntitySet="Exam">
+          <ScalarProperty Name="ExamID" ColumnName="ExamID" />
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+          <ScalarProperty Name="StuInfoID" ColumnName="StuInfoID" />
+          <ScalarProperty Name="TeaInfoID" ColumnName="TeaInfoID" />
+          <ScalarProperty Name="ExamScore" ColumnName="ExamScore" />
+          <ScalarProperty Name="ExamTime" ColumnName="ExamTime" />
+          <ScalarProperty Name="SubmitTime" ColumnName="SubmitTime" />
+          <ScalarProperty Name="BatchTime" ColumnName="BatchTime" />
+          <ScalarProperty Name="ExamState" ColumnName="ExamState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamInfo">
+      <EntityTypeMapping TypeName="AutoExamDBModel.ExamInfo">
+        <MappingFragment StoreEntitySet="ExamInfo">
+          <ScalarProperty Name="ExamInfoID" ColumnName="ExamInfoID" />
+          <ScalarProperty Name="ExamID" ColumnName="ExamID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="StuAnswer" ColumnName="StuAnswer" />
+          <ScalarProperty Name="IsResult" ColumnName="IsResult" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InClassRecord">
+      <EntityTypeMapping TypeName="AutoExamDBModel.InClassRecord">
+        <MappingFragment StoreEntitySet="InClassRecord">
+          <ScalarProperty Name="InClassRecordID" ColumnName="InClassRecordID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="StuNo" ColumnName="StuNo" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="AnswerTime" ColumnName="AnswerTime" />
+          <ScalarProperty Name="IsResult" ColumnName="IsResult" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginRecord">
+      <EntityTypeMapping TypeName="AutoExamDBModel.LoginRecord">
+        <MappingFragment StoreEntitySet="LoginRecord">
+          <ScalarProperty Name="LoginRecordID" ColumnName="LoginRecordID" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="LoginHASH" ColumnName="LoginHASH" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="AutoExamDBModel.Menus">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Pid" ColumnName="Pid" />
+          <ScalarProperty Name="IsMenu" ColumnName="IsMenu" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paper">
+      <EntityTypeMapping TypeName="AutoExamDBModel.Paper">
+        <MappingFragment StoreEntitySet="Paper">
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+          <ScalarProperty Name="PaperName" ColumnName="PaperName" />
+          <ScalarProperty Name="PaperExplain" ColumnName="PaperExplain" />
+          <ScalarProperty Name="PaperTime" ColumnName="PaperTime" />
+          <ScalarProperty Name="PaperScore" ColumnName="PaperScore" />
+          <ScalarProperty Name="PaperType" ColumnName="PaperType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperInfo">
+      <EntityTypeMapping TypeName="AutoExamDBModel.PaperInfo">
+        <MappingFragment StoreEntitySet="PaperInfo">
+          <ScalarProperty Name="PaperInfoID" ColumnName="PaperInfoID" />
+          <ScalarProperty Name="PaperID" ColumnName="PaperID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="TopicScore" ColumnName="TopicScore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleMenus">
+      <EntityTypeMapping TypeName="AutoExamDBModel.RoleMenus">
+        <MappingFragment StoreEntitySet="RoleMenus">
+          <ScalarProperty Name="RoleMenusID" ColumnName="RoleMenusID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="AutoExamDBModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StuInfo">
+      <EntityTypeMapping TypeName="AutoExamDBModel.StuInfo">
+        <MappingFragment StoreEntitySet="StuInfo">
+          <ScalarProperty Name="StuInfoID" ColumnName="StuInfoID" />
+          <ScalarProperty Name="StuNo" ColumnName="StuNo" />
+          <ScalarProperty Name="StuName" ColumnName="StuName" />
+          <ScalarProperty Name="StuDuty" ColumnName="StuDuty" />
+          <ScalarProperty Name="StuSex" ColumnName="StuSex" />
+          <ScalarProperty Name="StuPhoto" ColumnName="StuPhoto" />
+          <ScalarProperty Name="StuAdd" ColumnName="StuAdd" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ClassInfoID" ColumnName="ClassInfoID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeaInfo">
+      <EntityTypeMapping TypeName="AutoExamDBModel.TeaInfo">
+        <MappingFragment StoreEntitySet="TeaInfo">
+          <ScalarProperty Name="TeaInfoID" ColumnName="TeaInfoID" />
+          <ScalarProperty Name="TeaNo" ColumnName="TeaNo" />
+          <ScalarProperty Name="TeaName" ColumnName="TeaName" />
+          <ScalarProperty Name="TeaDuty" ColumnName="TeaDuty" />
+          <ScalarProperty Name="TeaSex" ColumnName="TeaSex" />
+          <ScalarProperty Name="TeaPhoto" ColumnName="TeaPhoto" />
+          <ScalarProperty Name="TeaAdd" ColumnName="TeaAdd" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ClassInfoID" ColumnName="ClassInfoID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topic">
+      <EntityTypeMapping TypeName="AutoExamDBModel.Topic">
+        <MappingFragment StoreEntitySet="Topic">
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="TopicExplain" ColumnName="TopicExplain" />
+          <ScalarProperty Name="TopicType" ColumnName="TopicType" />
+          <ScalarProperty Name="TopicA" ColumnName="TopicA" />
+          <ScalarProperty Name="TopicB" ColumnName="TopicB" />
+          <ScalarProperty Name="TopicC" ColumnName="TopicC" />
+          <ScalarProperty Name="TopicD" ColumnName="TopicD" />
+          <ScalarProperty Name="TopicSort" ColumnName="TopicSort" />
+          <ScalarProperty Name="TopicAnswer" ColumnName="TopicAnswer" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="EduTypeID" ColumnName="EduTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountMenus">
+      <EntityTypeMapping TypeName="AutoExamDBModel.AccountMenus">
+        <MappingFragment StoreEntitySet="AccountMenus">
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="MenuPid" ColumnName="MenuPid" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MenuUrl" ColumnName="MenuUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

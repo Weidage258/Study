@@ -1,0 +1,138 @@
+﻿@model List<AutoExamDB.Models.AccountRoles>
+@{
+    ViewBag.Title = "账户-角色授权";
+    var roles = ViewBag.Roles as List<AutoExamDB.Models.Roles>;
+    var accounts = ViewBag.Accounts as List<AutoExamDB.Models.Account>;
+}
+
+<h2></h2>
+@using (Html.BeginForm("AccountRole", "Accredit", FormMethod.Get))
+{
+    <div class="row">
+        <div class="col-3 offset-1">
+            <select class="form-control" name="AccountType">
+                <option value="3">===请选则账户类型===</option>
+                <option value="0">学生账户</option>
+                <option value="1">教师账户</option>
+                <option value="2">管理账户</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <input class="form-control" name="LoginName" placeholder="请输入查询账户" />
+        </div>
+        <div class="col-3">
+            <input type="submit" name="submit" class="form-control btn-primary" value="查询" />
+        </div>
+    </div>
+}
+<hr />
+
+<table class="table table-hover table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <td>账户</td>
+            <td>角色</td>
+            <td>全选</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @accounts)
+        {
+            using (Html.BeginForm())
+            {
+                <tr>
+                    @{
+                        var accountType = "";
+                        if (@item.AccountType == 0)
+                        {
+                            accountType = "学生账户";
+                        }
+                        else if (@item.AccountType == 1)
+                        {
+                            accountType = "教师账户";
+                        }
+                        else
+                        {
+                            accountType = "管理账户";
+                        }
+                    }
+                    <td>
+                        <input type="hidden" name="AccountID" value="@item.AccountID" />
+                        @item.LoginName【@accountType】
+                    </td>
+                    <td>
+                        @foreach (var role in @roles)
+                        {
+                            //获取当前用户与角色是否有关系
+                            if (Model.Where(ar => ar.AccountID == @item.AccountID && ar.RoleID == role.RoleID).FirstOrDefault() != null)
+                            {
+                                <input type="checkbox" name="@item.AccountID" checked value="@role.RoleID" />@role.Name<span>&nbsp;&nbsp;</span>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="@item.AccountID" value="@role.RoleID" />@role.Name<span>&nbsp;&nbsp;</span>
+                            }
+
+                        }
+                    </td>
+                    <td>
+                        <input type="checkbox" name="checkall" value="" />
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <script>
+        
+        //获取全选状态改变
+        $("input[name='checkall']").change(function () {
+            console.log($(this).is(":checked"));
+            var state = $(this).is(":checked");
+            var handle = null;
+            $($(this).parent().prev().children("input")).each(function () {                
+                $(this).prop("checked", state); //推荐使用prop
+                handle = this;
+            });
+            SaveAccountRole(handle);            
+        });
+        //获取用户角色状态改变
+        $("input[type='checkbox']:not([name='checkall'])").change(function () {
+            SaveAccountRole(this);
+        });
+        //当前用户和角色关系处理函数，需要传入当前用户的角色复选框
+        function SaveAccountRole(handle) {
+            var $result = [];
+            //console.log(JSON.stringify($(handle).val()))
+            var accountID = $(handle).parent().prev().children("input").val()
+            //得到当前用户所拥有的所有角色
+            $("input[name='" + $(handle).attr("name") + "']:checked").each(function () {//遍历取值
+                jsont = { "AccountID": accountID, "RoleID": $(this).val() }
+                $result.push(jsont);
+            });
+            if ($result.length == 0) {
+                jsont = { "AccountID": accountID, "RoleID": 0 }
+                $result.push(jsont);
+            }
+            //console.log($result)
+            $.ajax({
+                //url，表示的是你获取数据和发送数据的地址
+                //dataType表示的数据格式，这里是计较的json格式
+                //data表示数据的具体内容
+                //success，表示服务端成功响应
+                //error表示服务端响应不成功
+                //contentType(默认: "application/x-www-form-urlencoded") 发送信息至服务器时内容编码类型。默认值适合大多数情况。如果你明确地传递了一个content-type给 $.ajax() 那么他必定会发送给服务器（即使没有数据要发送）
+
+                type: "post",
+                url: "/Accredit/AccountRole",
+                //contentType:"application/json",
+                dataType: "json",
+                data: { accountRoles: JSON.stringify($result) },
+            });
+        }
+    </script>
+    
+    
+    }

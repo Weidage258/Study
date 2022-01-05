@@ -1,0 +1,44 @@
+﻿@model List<AutoExamDB.Models.AccountMenus>
+@{
+    ViewBag.Title = "账户权限查询";
+    var Accounts = ViewBag.Accounts as List<AutoExamDB.Models.Account>;
+}
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <td>账户</td>
+            <td>可访问菜单</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Accounts)
+        {
+            var accountType = "";
+            if (@item.AccountType == 0)
+            {
+                accountType = "学生账户";
+            }
+            else if (@item.AccountType == 1)
+            {
+                accountType = "教师账户";
+            }
+            else
+            {
+                accountType = "管理账户";
+            }
+            <tr>
+                <td>
+                    @item.LoginName【@accountType】
+                </td>
+                <td>
+                    @foreach (var menuitem in Model)
+                    {
+                        @:@menuitem.MenuName【@menuitem.MenuUrl】<br />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

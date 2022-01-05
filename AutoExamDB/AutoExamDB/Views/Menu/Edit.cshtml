@@ -1,0 +1,38 @@
+﻿@model AutoExamDB.Models.Menus
+@{
+    ViewBag.Title = "修改菜单";
+}
+
+<div class="card text-center">
+    <div class="card-header">
+        修改『 @Model.Name 』菜单
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm("Edit", "Menu", FormMethod.Post))
+        {
+            @Html.HiddenFor(model => model.MenuID)
+            <div class="form-group row">
+                <label for="Name" class="col-sm-5 col-form-label text-right">菜单名称：</label>
+                <div class="col-sm-7">
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control form-group", placeholder = "菜单名称" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Url" class="col-sm-5 col-form-label text-right">菜单URL：</label>
+                <div class="col-sm-7">
+                    @Html.TextBoxFor(model => model.Url, new { @class = "form-control form-group", placeholder = "菜单URL" })
+                </div>
+            </div>
+            @Html.HiddenFor(model => model.Pid)
+            @Html.HiddenFor(model => model.IsMenu)
+            <div class="form-group row">
+                <label for="Remark" class="col-sm-5 col-form-label text-right">备注：</label>
+                <div class="col-sm-7">
+                    @Html.TextBoxFor(model => model.Remark, new { @class = "form-control form-group", placeholder = "备注" })
+                </div>
+            </div>
+            <input type="submit" value="提交" class="btn btn-group btn-primary" />
+        }
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+﻿@model List<AutoExamDB.Models.Menus>
+@{
+    ViewBag.Title = "系统管理";
+}
+
+<h2></h2>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 d-flex">
+        @foreach (var item in Model)
+        {
+            <div class="card  text-center" style="width: 18rem;margin-right:10px;">
+                @*<img src="..." class="card-img-top" alt="...">*@
+                <i class="card-img-top ion-ribbon-b" style="font-size: 96px;color:gold"></i>
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Remark</p>
+                    <a href="@item.Url" class="btn btn-primary">前往</a>
+                </div>
+            </div>
+        }
+        
+    </div>
+    <div class="col-md-1"></div>
+</div>
+

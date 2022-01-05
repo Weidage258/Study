@@ -1,0 +1,24 @@
+﻿
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>职位</td>
+            <td>性别</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model as List<AutoExamDB.Models.StuInfo>)
+        {
+        <tr>
+            <td>@item.StuNo</td>
+            <td>@item.StuName</td>
+            <td>@item.StuDuty</td>
+            <td>
+                @(item.StuSex ? "男" : "女")
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

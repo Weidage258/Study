@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AutoExamDB.Models.Paper>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperExplain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaperScore)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperExplain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaperScore)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PaperID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PaperID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PaperID })
+        </td>
+    </tr>
+}
+
+</table>

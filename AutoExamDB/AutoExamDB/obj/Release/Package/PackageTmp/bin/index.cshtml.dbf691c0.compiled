@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/Views/Person/Index.cshtml" hash="ffffffffc2c533e3" filehash="f18f67f0ae8" flags="110000" assembly="App_Web_53ntlwly" type="ASP._Page_Views_Person_Index_cshtml">
+    <filedeps>
+        <filedep name="/Views/Person/Index.cshtml" />
+    </filedeps>
+</preserve>

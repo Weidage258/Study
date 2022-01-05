@@ -1,0 +1,234 @@
+﻿@model List<AutoExamDB.Models.RoleMenus>
+@{
+    ViewBag.Title = "角色-菜单授权";
+    var roles = ViewBag.Roles as List<AutoExamDB.Models.Roles>;
+    var menus = ViewBag.Menus as List<AutoExamDB.Models.Menus>;
+    var num = 0;
+    var num0 = 0;
+    var num1 = 0;
+    //var num2 = 0;
+    var checkall = "checkall"; 
+    var collapesID = "menu";//初始值
+    var collapesID0 = "";//控制一级菜单
+    var collapesID1 = "";//控制二级菜单
+    var collapesID2 = "";//控制三级菜单
+
+}
+
+<h2></h2>
+@using (Html.BeginForm("RoleMenu", "Accredit", FormMethod.Get))
+{
+    <div class="row">
+        <div class="col-3 offset-1">
+            <select class="form-control" name="RoleID">
+                <option value="0">===请选则角色类型===</option>
+                @foreach (var item in roles)
+                {
+                    <option value="@item.RoleID">@item.Name</option>
+                }
+            </select>
+        </div>
+        <div class="col-3">
+            <input type="submit" name="submit" class="form-control btn-primary" value="查询" />
+        </div>
+    </div>
+}
+<hr />
+@using (Html.BeginForm())
+{
+    <table class="table table-hover table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <td  style="vertical-align:middle;text-align:center;">角色</td>
+                <td style="vertical-align:middle;text-align:center;">菜单</td>
+                <td style="vertical-align:middle;text-align:center;">全选</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in roles)
+            {
+                collapesID = "menu";
+                collapesID0 = "";
+                collapesID1 = "";
+                collapesID2 = "";
+                checkall = "checkall" + num;                
+                <tr>                   
+                    <td  style="vertical-align:middle;text-align:center;">
+                        <input type="hidden" name="@checkall" value="@item.RoleID" />
+                        @item.Name 
+                    </td>
+                    <td class="">                       
+                        @foreach (var item1 in menus.Where(m => m.Pid == 0).ToList())
+                        {//遍历一级菜单
+                            collapesID0 = collapesID + num0;
+                            num1 = 0;
+                            <div class="alert-dark" style="padding:10px 0px 0px 0px;">
+                                <p class="" style="display:inline-block;width:35%;padding-left:20px;">
+                                    @if (Model.Where(rm => rm.RoleID == @item.RoleID && rm.MenuID == item1.MenuID).FirstOrDefault() != null)
+                                    {
+                                        <input type="checkbox" checked markall="@checkall" marka="@collapesID0" value="@item1.MenuID" />
+
+                                    }
+                                    else
+                                    {
+                                        <input type="checkbox" markall="@checkall" marka="@collapesID0" value="@item1.MenuID" />
+                                    }
+
+                                    <a class="text-dark iconcss" data-toggle="collapse" href="#@collapesID0" role="button" aria-expanded="false" aria-controls="@collapesID0">
+                                        @item1.Name
+                                    </a>
+                                </p>
+                                <p class="text-center" style="display:inline-block;width:30%;">
+                                    @item1.Url
+                                </p>
+                            </div>
+                            foreach (var item2 in menus.Where(m => m.Pid == item1.MenuID).ToList())
+                            {//遍历当前一级菜单下的二级菜单
+                                collapesID1 = collapesID0 + num1;
+                                var markball = collapesID0 + "item";
+                                //num2 = 0;
+                                <div class="collapse alert-light" id="@collapesID0" style="padding:10px 0px 0px 0px;">                                    
+                                    <p class="" style="display:inline-block;width:35%;padding-left:40px;">
+                                        @if (Model.Where(rm => rm.RoleID == @item.RoleID && rm.MenuID == item2.MenuID).FirstOrDefault() != null)
+                                        {
+                                            <input type="checkbox" checked markall="@checkall" markb="@collapesID1" markball="@markball" value="@item2.MenuID" />
+                                        }
+                                        else
+                                        {
+                                            <input type="checkbox" markall="@checkall" markb="@collapesID1" markball="@markball" value="@item2.MenuID" />
+                                        }
+                                        <a class="text-dark" data-toggle="collapse" href="#@collapesID1" role="button" aria-expanded="false" aria-controls="@collapesID1">
+                                            @item2.Name
+                                        </a>
+                                    </p>
+                                    <p class="text-center" style="display:inline-block;width:30%;">
+                                        @item2.Url
+                                    </p>
+
+                                    @foreach (var item3 in menus.Where(m => m.Pid == item2.MenuID).ToList())
+                                    {//遍历当前二级菜单下的操作
+                                        collapesID2 = collapesID1 + "item";
+                                        <div class="collapse alert-light" id="@collapesID1" style="padding:10px 0px 0px 0px;">                                            
+                                            <p class="" style="display:inline-block;width:35%;padding-left:60px;">
+                                                @if (Model.Where(rm => rm.RoleID == @item.RoleID && rm.MenuID == item3.MenuID).FirstOrDefault() != null)
+                                                {
+                                                    <input type="checkbox" checked markall="@checkall" markc="@collapesID2" value="@item3.MenuID" />@item3.Name
+                                                }
+                                                else
+                                                {
+                                                    <input type="checkbox" markall="@checkall" markc="@collapesID2" value="@item3.MenuID" />@item3.Name
+                                                }
+                                            </p>
+                                            <p class="text-center" style="display:inline-block;width:30%;">
+                                                @item3.Url
+                                            </p>
+
+                                        </div>
+                                        //num2++;
+                                    }
+                                </div>
+                                num1++;
+                            }
+                            num0++;
+                        }
+                    </td>
+                    <td style="vertical-align:middle;text-align:center;">
+                        <input type="checkbox" name="checkall" value="no"  markall="@checkall"/>
+                    </td>
+                </tr>
+                num++;
+            }
+        </tbody>
+    </table>
+}
+
+
+@section scripts{
+    <script>
+        $("input").click(function () {                  
+            if (typeof ($(this).attr("markc")) != "undefined") {//判断单击的是否是三级菜单  
+                var markb = $(this).attr("markc").substring(0, 6);
+                var marka = $(this).attr("markc").substring(0, 5);
+                //console.log($("input[markc='" + $(this).attr("markc") + "']:checked").length);
+                if ($("input[markc='" + $(this).attr("markc") + "']:checked").length == 0) {//判断子项是否存在选中的情况
+                    $("input[markb='" + markb + "']").prop("checked", false);
+                    $("input[marka='" + marka + "']").prop("checked", false);
+                }
+                else {
+                    $("input[markb='" + markb + "']").prop("checked", true);
+                    $("input[marka='" + marka + "']").prop("checked", true);
+                } 
+            }
+            else if (typeof ($(this).attr("markb")) != "undefined") {//判断单击的是否是二级菜单
+                var isChecked = $(this).prop("checked");//获取当前二级菜单复选框的状态
+                //console.log(isChecked)
+                var marka = $(this).attr("markb").substring(0, 5);
+                var markball = marka + "item";
+                var markc = $(this).attr("markb") + "item";
+                //console.log($("input[markball='" + $(this).attr("markball") + "']:checked").length);
+                if ($("input[markball='" + $(this).attr("markball") + "']:checked").length == 0) {//判断当前一级菜单下所有二级菜单是否存在选中的情况
+                    $("input[marka='" + marka + "']").prop("checked", false);                    
+                }
+                else {
+                    $("input[marka='" + marka + "']").prop("checked", true);
+                }
+                //console.log($(markc))
+                $("input[markc='" + markc + "']").each(function () {//把当前二级菜单下所有复选框的状态和二级菜单保持一致
+                    $(this).prop("checked", isChecked);
+                });
+            }
+            else if (typeof ($(this).attr("marka")) != "undefined") {//判断单击的是否是一级菜单
+                var isChecked = $(this).prop("checked");//获取当前一级级菜单复选框的状态
+                //console.log(isChecked);
+                var markball = $(this).attr("marka") + "item";                
+                $("input[markball='" + markball + "']").each(function () {//把当前一级菜单下所有复选框的状态和一级菜单保持一致
+                    //console.log(markball);
+                    $(this).prop("checked", isChecked);
+                    var markc = $(this).attr("markb") + "item";
+                    $("input[markc='" + markc + "']").each(function () {//把当前二级菜单下所有复选框的状态和一级菜单保持一致
+                        //console.log(markc);
+                        $(this).prop("checked", isChecked);
+                    });
+                });
+            }
+            else if (typeof ($(this).attr("markall")) != "undefined") {//判断单击的是否是全选复选框
+                var isChecked = $(this).prop("checked");//获取当前复选框的状态
+                var checkall = $(this).attr("markall");
+                //console.log(checkall)                
+                $("input[markall='" + checkall + "']").each(function () {//把所有复选框的状态和当前复选框保持一致
+                    $(this).prop("checked", isChecked);
+                });
+            }
+            //准备写数据库的数据
+            var $result = [];//保存角色--菜单关系
+            var markall = $(this).attr("markall");
+            var roleID = $("input[name='" + markall + "']").val();
+            console.log(roleID);
+            $("input[markall='" + markall + "']:checked").each(function () {//获取当前角色下所有选中的复选框
+                if ($(this).val() !="no") {
+                    jsont = { "RoleID": roleID, "MenuID": $(this).val() }
+                    $result.push(jsont);
+                }                
+            });
+            if ($result.length == 0) {//如果对角色取消所有授权，加入一条空白记录
+                jsont = { "RoleID": roleID, "MenuID": 0 }
+                $result.push(jsont);
+            }
+            $.ajax({
+                //url，表示的是你获取数据和发送数据的地址
+                //dataType表示的数据格式，这里是计较的json格式
+                //data表示数据的具体内容
+                //success，表示服务端成功响应
+                //error表示服务端响应不成功
+                //contentType(默认: "application/x-www-form-urlencoded") 发送信息至服务器时内容编码类型。默认值适合大多数情况。如果你明确地传递了一个content-type给 $.ajax() 那么他必定会发送给服务器（即使没有数据要发送）
+
+                type: "post",
+                url: "/Accredit/RoleMenu",
+                //contentType:"application/json",
+                dataType: "json",
+                data: { accountRoles: JSON.stringify($result) },
+            });
+        });
+
+    </script>
+}

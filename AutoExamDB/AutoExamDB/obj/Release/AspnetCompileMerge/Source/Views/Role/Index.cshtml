@@ -1,0 +1,43 @@
+﻿@model List<AutoExamDB.Models.Roles>
+@{
+    ViewBag.Title = "角色管理";
+}
+
+<h2></h2>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 div1">
+        <h3>
+            <i class="icon ion-person-stalker" style="color:aqua;margin-right:15px;"></i>角色管理
+            <a href="/Role/Add/"><i class="icon ion-android-add-circle" style="color:aqua;margin-left:5px;"></i></a>
+        </h3>
+        <table class="table table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col" class="text-center">角色名字</th>
+                    <th scope="col" class="text-center">备注</th>
+                    <th scope="col" class="text-center">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        <td style="padding-left:20px;">                            
+                            @item.Name
+                        </td>
+                        <td>@item.Remark</td>
+                        <td style="font-size:20px;" class="text-center">
+                            <a href="/Role/Edit/@item.RoleID"><i class="icon ion-compose" style="color:aqua;margin-right:15px;"></i></a>
+                            <a href="/Role/Dele/@item.RoleID"><i class="icon ion-android-cancel" style="color:red;"></i></a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+

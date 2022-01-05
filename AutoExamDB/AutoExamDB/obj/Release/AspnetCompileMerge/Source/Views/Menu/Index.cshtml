@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "菜单管理";
+    var menus = Model as List<AutoExamDB.Models.Menus>;
+    var num = 0;
+    var collapesID= "menu";
+    var collapesID1 = "";
+}
+
+@section css{
+    <style>
+        .div1 {
+            border: 0px solid red;
+        }
+        /*.iconcss::before {
+            content: "\27A4";
+        }
+        .iconcss:focus::before {
+            content: "\25BC";
+        }*/
+
+    </style>
+}
+
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 div1">
+        <h3>
+            <i class="icon ion-android-list" style="color:aqua;margin-right:15px;"></i>菜单管理
+            <a href="/Menu/Add/0?menuname=一级菜单&typeid=1"><i class="icon ion-android-add-circle" style="color:aqua;margin-left:5px;"></i></a>
+        </h3>
+
+        <div class="bg-dark text-white" style="padding:10px 0px 5px 0px;">
+            <p class="text-center" style="display:inline-block;width:35%;border-right:2px solid white;">菜单名字</p>
+            <p class="text-center" style="display:inline-block;width:30%;border-right:2px solid white;">菜单URL</p>
+            <p class="text-center" style="display:inline-block;width:25%;">操作</p>
+        </div>
+        @foreach (var item1 in menus.Where(m => m.Pid == 0).ToList())
+        {//遍历一级菜单
+            collapesID = collapesID + num;
+            <div class="alert-dark" style="padding:10px 0px 0px 0px;">
+                <p class="" style="display:inline-block;width:35%;padding-left:20px;">
+                    <a class="text-dark iconcss" data-toggle="collapse" href="#@collapesID" role="button" aria-expanded="false" aria-controls="@collapesID">
+                        <i class="icon icon-menu ion-android-arrow-dropright"></i> @item1.Name
+                    </a>
+                </p>
+                <p class="text-center" style="display:inline-block;width:30%;">
+                    @item1.Url
+                </p>
+                <p class="text-center" style="display:inline-block;width:25%;">
+                    <a href="/Menu/Add/@item1.MenuID?menuname=@item1.Name&typeid=2"><i class="icon ion-android-add-circle" style="color:aqua;margin-right:15px;"></i></a>
+                    <a href="/Menu/Edit/@item1.MenuID"><i class="icon ion-compose" style="color:aqua;margin-right:15px;"></i></a>
+                    <a href="/Menu/Dele/@item1.MenuID"><i class="icon ion-android-cancel" style="color:red;"></i></a>
+
+                </p>
+            </div>
+            foreach (var item2 in menus.Where(m => m.Pid == item1.MenuID).ToList())
+            {//遍历当前一级菜单下的二级菜单
+            <div class="collapse alert-light" id="@collapesID" style="padding:10px 0px 0px 0px;">
+                @{
+                    collapesID1 = collapesID + num;
+                }
+                <p class="" style="display:inline-block;width:35%;padding-left:40px;">
+                    <a class="text-dark" data-toggle="collapse" href="#@collapesID1" role="button" aria-expanded="false" aria-controls="@collapesID1">
+                        <i class="icon icon-menu ion-android-arrow-dropright"></i> @item2.Name
+                    </a>
+                </p>
+                <p class="text-center" style="display:inline-block;width:30%;">
+                    @item2.Url
+                </p>
+                <p class="text-center" style="display:inline-block;width:25%;">
+                    <a href="/Menu/Add/@item2.MenuID?menuname=@item2.Name&typeid=3"><i class="icon ion-android-add-circle" style="color:aqua;margin-right:15px;"></i></a>
+                    <a href="/Menu/Edit/@item2.MenuID"><i class="icon ion-compose" style="color:aqua;margin-right:15px;"></i></a>
+                    <a href="/Menu/Dele/@item2.MenuID"><i class="icon ion-android-cancel" style="color:red;"></i></a>
+
+                </p>
+
+                @foreach (var item3 in menus.Where(m => m.Pid == item2.MenuID).ToList())
+                {//遍历当前二级菜单下的操作
+                    <div class="collapse alert-light" id="@collapesID1" style="padding:10px 0px 0px 0px;">
+                        <p class="" style="display:inline-block;width:35%;padding-left:60px;">
+                            @item3.Name
+                        </p>
+                        <p class="text-center" style="display:inline-block;width:30%;">
+                            @item3.Url
+                        </p>
+                        <p class="text-center" style="display:inline-block;width:25%;">
+                            <a href="/Menu/Edit/@item3.MenuID"><i class="icon ion-compose" style="color:aqua;margin-right:15px;"></i></a>
+                            <a href="/Menu/Dele/@item3.MenuID"><i class="icon ion-android-cancel" style="color:red;"></i></a>
+                        </p>
+                    </div>
+                }
+            </div>
+            num++;
+            }
+         num++;
+        }        
+    </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    @section scripts{
+        <script>
+
+        </script>
+
+    }

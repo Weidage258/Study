@@ -1,0 +1,50 @@
+﻿@model AutoExamDB.Models.Paper
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Paper</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperExplain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperExplain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperScore)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PaperID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
